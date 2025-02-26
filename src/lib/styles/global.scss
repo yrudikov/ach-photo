@@ -1,0 +1,58 @@
+@use "./mixins" as *;
+
+:root {
+  --color-primary: #ffcb71;
+  --color-secondary: #64748b;
+  --color-accent: #f43f5e;
+  --color-titleText: #fff;
+  --color-text: #ffcb71;
+  --color-textSecondary: #131213;
+  --color-background: #131213;
+  --color-backgroundSecondary: #ffcb71;
+
+  --font-title: "Bebas Neue", sans-serif;
+  --font-subtitle: "DM Serif Display", serif;
+  --font-body: "Montserrat", sans-serif;
+
+  --font-size-small: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  //max-width: 1200px;
+  //margin: auto
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+@include media(tablet) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+}

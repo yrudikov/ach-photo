@@ -1,0 +1,66 @@
+{
+  "site": {
+    "title": "AR Consulting",
+    "description": "Ваш надежный партнер в мире бизнеса и консалтинга."
+  },
+  "check": "is Life!",
+  "header": {
+    "logo": "/images/logo.svg",
+    "nav": [
+      { "name": "HOME", "link": "#hero" },
+      { "name": "O MNIE", "link": "#about" },
+      { "name": "OFERTA", "link": "#offer" },
+      { "name": "DOŚWIADCZENIE", "link": "#experience" },
+      { "name": "KONTAKT", "link": "#contact" }
+    ]
+  },
+  "hero": {
+    "title": "Развивайте бизнес с профессионалами",
+    "subtitle": "Мы помогаем компаниям расти и достигать успеха",
+    "background": "/images/hero-bg.jpg",
+    "button": {
+      "text": "Подробнее",
+      "link": "/about"
+    }
+  },
+  "features": [
+    {
+      "icon": "/icons/strategy.svg",
+      "title": "Стратегическое планирование",
+      "description": "Помогаем выстроить стратегию роста и развития."
+    },
+    {
+      "icon": "/icons/finance.svg",
+      "title": "Финансовый консалтинг",
+      "description": "Оптимизируем финансы и налогообложение."
+    },
+    {
+      "icon": "/icons/marketing.svg",
+      "title": "Маркетинговые решения",
+      "description": "Создаем успешные маркетинговые стратегии."
+    }
+  ],
+  "carousel": {
+    "title": "Отзывы клиентов",
+    "items": [
+      {
+        "name": "Иван Петров",
+        "text": "Отличная команда профессионалов! Помогли вывести мой бизнес на новый уровень.",
+        "image": "/images/client1.jpg"
+      },
+      {
+        "name": "Анна Смирнова",
+        "text": "Благодаря их стратегиям мы увеличили прибыль на 50%!",
+        "image": "/images/client2.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 AR Consulting. Все права защищены.",
+    "socials": [
+      { "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
+      { "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
+      { "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
+    ]
+  }
+}
