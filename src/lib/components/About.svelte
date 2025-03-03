@@ -100,6 +100,10 @@
       }
     }
 
+    .about-image-wrapper {
+      height: fit-content;
+    }
+
   }
 
 </style>

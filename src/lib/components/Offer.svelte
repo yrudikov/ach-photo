@@ -160,5 +160,9 @@
       color: var(--color-textSecondary);
       text-align: left;
     }
+
+		.offer-button:hover {
+      background: var(--color-backgroundSecondaryHower);
+		}
   }
 </style>

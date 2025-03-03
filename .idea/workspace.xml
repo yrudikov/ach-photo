@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="297216f5-4556-470a-a278-f65effc6a4aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/About.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/About.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Hero.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Hero.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Offer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Offer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/content.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +121,7 @@
       <workItem from="1740566990731" duration="3357000" />
       <workItem from="1740647300120" duration="28509000" />
       <workItem from="1740736943722" duration="19439000" />
-      <workItem from="1740996011900" duration="2155000" />
+      <workItem from="1740996011900" duration="8958000" />
     </task>
     <servers />
   </component>

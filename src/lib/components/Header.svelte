@@ -46,9 +46,12 @@
 			<div class="header-logo-wrapper">
 				<img src="/img/logo-consulting.png" alt="Logo" class="header-logo" />
 			</div>
+			<div style="filter: drop-shadow(0 0 3px rgba(19, 18, 19, 1));">
 			<Hamburger bind:open type="spin" --color="var(--color-text)"
 								 --active-color="var(--color-text)"
-								 --padding="12px 15px 10px 15px" />
+								 --padding="12px 15px 10px 15px"
+									/>
+			</div>
 		{/if}
 		{#if open}
 			<nav class="mobile-nav">
@@ -64,6 +67,7 @@
 
 <style lang="scss">
   @use '$lib/styles/_mixins' as *;
+
   .header {
     position: fixed;
     top: 0;
@@ -92,6 +96,7 @@
 		height: 100%;
 		object-fit: contain;
 		align-self: center;
+    filter: drop-shadow(0 0 10px rgba(19, 18, 19, 1));
 	}
 
   .header-title-mobile {
@@ -109,6 +114,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+		border-radius: 20px;
+    box-shadow: 0 0 8px rgba(19, 18, 19, 1);
   }
 
   .mobile-nav-link {
@@ -124,6 +131,7 @@
   }
 
   @include media(tablet) {
+
     .header {
       position: fixed;
       top: 60px;
@@ -143,6 +151,7 @@
       background-color: var(--color-backgroundSecondary);
       padding: 0.5rem 1.5rem;
 			border-radius: 3px 25px 25px 3px;
+      box-shadow: 0 0 8px rgba(19, 18, 19, 1);
     }
 
     .nav-link {
