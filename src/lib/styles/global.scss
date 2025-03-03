@@ -10,6 +10,8 @@
   --color-background: #131213;
   --color-backgroundSecondary: #ffcb71;
 
+  //#ffc066
+
   --font-title: "Bebas Neue", sans-serif;
   --font-subtitle: "DM Serif Display", serif;
   --font-body: "Montserrat", sans-serif;
@@ -30,20 +32,33 @@ html {
   box-sizing: border-box;
 }
 
+.text-nav-about-ul {
+  font-family: var(--font-title),serif;
+  font-size: var(--font-size-lg);
+}
+.text-serif-display {
+  font-family: var(--font-subtitle),serif;
+}
+.text-bebas {
+  font-family: var(--font-title),serif;
+}
+.text-monserrat {
+  font-family: var(--font-body),serif;
+}
+
+
 
 body {
-  font-family: var(--font-body);
   font-size: var(--font-size-base);
   color: var(--color-text);
   background-color: var(--color-background);
   line-height: 1.6;
-  //max-width: 1200px;
-  //margin: auto
 }
 
 .container {
   max-width: 400px;
   margin: auto;
+  //margin: 80px auto 0 auto;
   padding: 0 1rem;
 }
 

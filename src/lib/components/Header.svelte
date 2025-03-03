@@ -18,34 +18,31 @@
 	});
 
 	function scrollToSection(event) {
-		event.preventDefault(); // Отменяем стандартное поведение ссылки
+		event.preventDefault();
 
-		const targetId = event.currentTarget.getAttribute("href").substring(1); // Убираем #
+		const targetId = event.currentTarget.getAttribute("href").substring(1);
 		const targetElement = document.getElementById(targetId);
 
 		if (targetElement) {
-			targetElement.scrollIntoView({ behavior: "smooth" });
+			const offset = !isMobile ? 140 : 70;
+			const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
+			window.scrollTo({ top: elementPosition, behavior: "smooth" });
+			open = false;
 		}
-	}
-	function handleMobileNavClick(link) {
-		scrollToSection({ preventDefault: () => {}, currentTarget: { getAttribute: () => link } });
-		open = false;
 	}
 
 </script>
 
 <header class="header">
 	<div class="container">
-		<!-- Навигация (десктоп) -->
 		<nav class="nav">
 			{#each content.header.nav as item}
-				<a href={item.link} class="nav-link" onclick={scrollToSection}>{item.name}</a>
+				<a href={item.link} class="nav-link text-nav-about-ul" onclick={scrollToSection}>{item.name}</a>
 			{/each}
 		</nav>
 
-		<!-- Бургер-меню (мобильная версия) -->
 		{#if isMobile}
-<!--			<h1 class="header-title-mobile">Consulting 4.0</h1>-->
 			<div class="header-logo-wrapper">
 				<img src="/img/logo-consulting.png" alt="Logo" class="header-logo" />
 			</div>
@@ -53,11 +50,10 @@
 								 --active-color="var(--color-text)"
 								 --padding="12px 15px 10px 15px" />
 		{/if}
-		<!-- Мобильное меню -->
 		{#if open}
 			<nav class="mobile-nav">
 				{#each content.header.nav as item}
-					<a href={item.link} class="mobile-nav-link" onclick={() => handleMobileNavClick(item.link)}>
+					<a href={item.link} class="mobile-nav-link text-nav-about-ul" onclick={scrollToSection}>
 						{item.name}
 					</a>
 				{/each}
@@ -68,13 +64,12 @@
 
 <style lang="scss">
   @use '$lib/styles/_mixins' as *;
-  /* Mobile-First */
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--color-background);
+    background-color: transparent;
     padding: 8px 0;
     z-index: 1000;
   }
@@ -113,13 +108,13 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
 
   .mobile-nav-link {
     color: var(--color-textSecondary);
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0;
     background: var(--color-backgroundSecondary);
     text-align: center;
   }
@@ -134,7 +129,6 @@
       top: 60px;
       left: 50%;
 			transform: translateX(-50%);
-			max-width: 1200px;
       width: 100%;
       background-color: transparent;
       z-index: 1000;
@@ -144,10 +138,10 @@
       display: flex;
 			justify-content: space-between;
 			align-items: center;
-			max-width: 600px;
+			max-width: 700px;
 			width: 100%;
       background-color: var(--color-backgroundSecondary);
-      padding: 1rem;
+      padding: 0.5rem 1.5rem;
 			border-radius: 3px 25px 25px 3px;
     }
 

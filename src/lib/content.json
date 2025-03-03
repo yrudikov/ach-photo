@@ -5,7 +5,7 @@
   },
   "check": "is Life!",
   "header": {
-    "logo": "/images/logo.svg",
+    "logo": "/img/logo-consulting.png",
     "nav": [
       { "name": "HOME", "link": "#hero" },
       { "name": "O MNIE", "link": "#about" },
@@ -15,31 +15,58 @@
     ]
   },
   "hero": {
-    "title": "Развивайте бизнес с профессионалами",
-    "subtitle": "Мы помогаем компаниям расти и достигать успеха",
-    "background": "/images/hero-bg.jpg",
-    "button": {
-      "text": "Подробнее",
-      "link": "/about"
+    "title": "4.0 CONSULTING",
+    "subtitle": [
+      { "item": "CYFRYZACJA"},
+      { "item": "UNIFIKACJA"},
+      { "item": "OPTYMALIZACJA"}
+      ],
+    "heroImage": "/img/globus.svg"
+  },
+  "about": {
+    "title": "Artur, Mariusz Ryszka",
+    "aboutList": [
+      {"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."},
+      {"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."},
+      {"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "},
+      {"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "},
+      {"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."},
+      {"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."}
+    ],
+    "image": {
+      "src": "/img/about-img.webp",
+      "alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
     }
   },
-  "features": [
-    {
-      "icon": "/icons/strategy.svg",
-      "title": "Стратегическое планирование",
-      "description": "Помогаем выстроить стратегию роста и развития."
-    },
-    {
-      "icon": "/icons/finance.svg",
-      "title": "Финансовый консалтинг",
-      "description": "Оптимизируем финансы и налогообложение."
-    },
-    {
-      "icon": "/icons/marketing.svg",
-      "title": "Маркетинговые решения",
-      "description": "Создаем успешные маркетинговые стратегии."
-    }
-  ],
+  "offer": {
+    "title": "OFERUJEMY",
+    "items": [
+      {
+        "title": "Consulting Biznesowy",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      },
+      {
+        "title": "Pricing Volume",
+        "description": "Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      },
+      {
+        "title": "Skalowanie Sprzedaży",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      },
+      {
+        "title": "Automatyzacja Procesów",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      },
+      {
+        "title": "Optymalizowanie Kosztów",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      },
+      {
+        "title": "Strony WWW",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+      }
+    ]
+  },
   "carousel": {
     "title": "Отзывы клиентов",
     "items": [

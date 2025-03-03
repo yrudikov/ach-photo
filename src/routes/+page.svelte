@@ -26,11 +26,3 @@
 	<Contact />
 </main>
 <Footer />
-
-<style lang="scss">
-  @use '$lib/styles/_mixins' as *;
-	main {
-		margin-top: 80px;
-	}
-
-</style>
