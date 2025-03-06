@@ -70,14 +70,15 @@
 	.portfolio-text-container {
 		justify-content: center;
 		max-width: 33%;
+		margin-top: 0;
 	}
 
 	.portfolio-subtitle {
-		// font-size: var(--font-size-lg);
+		font-size: var(--font-size-lg);
 		letter-spacing: 1px;
 	}
   .portfolio-text-content {
-		// font-size: var(--font-size-medium);
+		font-size: var(--font-size-medium);
 		letter-spacing: 1px;
 	}
 
