@@ -1,7 +1,11 @@
 <script>
+	import Carousel from 'svelte-carousel'
 	import content from "$lib/content.json";
+
+
 </script>
 
-<div>
-	<h1>PortfolioCarousel {content.check}</h1>
-</div>
+
+<style lang="scss">
+
+</style>

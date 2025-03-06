@@ -67,6 +67,28 @@
       }
     ]
   },
+  "portfolio": {
+    "title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
+    "content": [
+      { "text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów." },
+      { "text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji." },
+      { "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
+    ],
+    "images": [
+      {
+        "src": "https://placehold.co/1200x800",
+        "alt": "1"
+      },
+      {
+        "src": "https://placehold.co/1200x800",
+        "alt": "2"
+      },
+      {
+        "src": "https://placehold.co/1200x800",
+        "alt": "3"
+      }
+    ]
+  },
   "carousel": {
     "title": "Отзывы клиентов",
     "items": [

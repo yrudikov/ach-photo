@@ -99,6 +99,7 @@
     border-radius: 20px;
     text-align: center;
     transition: background 0.3s, border-radius 2s;
+		letter-spacing: 1px;
   }
 
   .offer-button:hover, .offer-button:focus, .offer-list-item.active .offer-button {
@@ -141,7 +142,10 @@
     .offer-list {
       flex: 0 0 50%;
     }
-    
+
+    .offer-button {
+			letter-spacing: 6px;
+		}
     .offer-button, .offer-button.visible, .offer-list-item, .offer-list-item.active .offer-button {
       border-radius: 5px 20px 20px 5px;
     }

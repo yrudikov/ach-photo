@@ -99,10 +99,6 @@
     filter: drop-shadow(0 0 10px rgba(19, 18, 19, 1));
 	}
 
-  .header-title-mobile {
-		color: var(--color-textSecondary);
-	}
-
   .mobile-nav {
     position: absolute;
 		width: 100%;
