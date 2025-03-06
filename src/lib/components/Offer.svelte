@@ -12,7 +12,7 @@
 </script>
 
 <section id="offer" class="offer-section">
-	<h1 class="offer-title text-monserrat">{content.offer.title}</h1>
+	<h1 class="section-title text-monserrat">{content.offer.title}</h1>
 	<Divider />
 	<article class="offer-container">
 		<ul class="offer-list">
@@ -51,13 +51,6 @@
     align-items: center;
     text-align: center;
     padding-top: 40px;
-  }
-
-  .offer-title {
-    font-size: 2rem;
-    font-weight: 400;
-    color: var(--color-text);
-    text-transform: uppercase;
   }
 
   .offer-container {

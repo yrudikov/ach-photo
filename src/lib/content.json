@@ -1,115 +1,167 @@
 {
-  "site": {
-    "title": "AR Consulting",
-    "description": "Ваш надежный партнер в мире бизнеса и консалтинга."
-  },
-  "check": "is Life!",
-  "header": {
-    "logo": "/img/logo-consulting.png",
-    "nav": [
-      { "name": "HOME", "link": "#hero" },
-      { "name": "O MNIE", "link": "#about" },
-      { "name": "OFERTA", "link": "#offer" },
-      { "name": "DOŚWIADCZENIE", "link": "#experience" },
-      { "name": "KONTAKT", "link": "#contact" }
-    ]
-  },
-  "hero": {
-    "title": "4.0 CONSULTING",
-    "subtitle": [
-      { "item": "CYFRYZACJA"},
-      { "item": "UNIFIKACJA"},
-      { "item": "OPTYMALIZACJA"}
-      ],
-    "heroImage": "/img/globus.svg"
-  },
-  "about": {
-    "title": "Artur, Mariusz Ryszka",
-    "aboutList": [
-      {"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."},
-      {"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."},
-      {"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "},
-      {"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "},
-      {"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."},
-      {"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."}
-    ],
-    "image": {
-      "src": "/img/about-img.webp",
-      "alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
-    }
-  },
-  "offer": {
-    "title": "OFERUJEMY",
-    "items": [
-      {
-        "title": "Consulting Biznesowy",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      },
-      {
-        "title": "Pricing Volume",
-        "description": "Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      },
-      {
-        "title": "Skalowanie Sprzedaży",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      },
-      {
-        "title": "Automatyzacja Procesów",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      },
-      {
-        "title": "Optymalizowanie Kosztów",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      },
-      {
-        "title": "Strony WWW",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
-      }
-    ]
-  },
-  "portfolio": {
-    "title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
-    "content": [
-      { "text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów." },
-      { "text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji." },
-      { "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
-    ],
-    "images": [
-      {
-        "src": "https://placehold.co/1200x800",
-        "alt": "1"
-      },
-      {
-        "src": "https://placehold.co/1200x800",
-        "alt": "2"
-      },
-      {
-        "src": "https://placehold.co/1200x800",
-        "alt": "3"
-      }
-    ]
-  },
-  "carousel": {
-    "title": "Отзывы клиентов",
-    "items": [
-      {
-        "name": "Иван Петров",
-        "text": "Отличная команда профессионалов! Помогли вывести мой бизнес на новый уровень.",
-        "image": "/images/client1.jpg"
-      },
-      {
-        "name": "Анна Смирнова",
-        "text": "Благодаря их стратегиям мы увеличили прибыль на 50%!",
-        "image": "/images/client2.jpg"
-      }
-    ]
-  },
-  "footer": {
-    "copyright": "© 2024 AR Consulting. Все права защищены.",
-    "socials": [
-      { "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
-      { "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
-      { "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
-    ]
-  }
+	"site": {
+		"title": "AR Consulting",
+		"description": "Ваш надежный партнер в мире бизнеса и консалтинга."
+	},
+	"check": "is Life!",
+	"header": {
+		"logo": "/img/logo-consulting.png",
+		"nav": [
+			{ "name": "HOME", "link": "#hero" },
+			{ "name": "O MNIE", "link": "#about" },
+			{ "name": "OFERTA", "link": "#offer" },
+			{ "name": "DOŚWIADCZENIE", "link": "#experience" },
+			{ "name": "KONTAKT", "link": "#contact" }
+		]
+	},
+	"hero": {
+		"title": "4.0 CONSULTING",
+		"subtitle": [{ "item": "CYFRYZACJA" }, { "item": "UNIFIKACJA" }, { "item": "OPTYMALIZACJA" }],
+		"heroImage": "/img/globus.svg"
+	},
+	"about": {
+		"title": "Artur, Mariusz Ryszka",
+		"aboutList": [
+			{
+				"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."
+			},
+			{
+				"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."
+			},
+			{
+				"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "
+			},
+			{
+				"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "
+			},
+			{
+				"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."
+			},
+			{
+				"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."
+			}
+		],
+		"image": {
+			"src": "/img/about-img.webp",
+			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+		}
+	},
+	"offer": {
+		"title": "OFERUJEMY",
+		"items": [
+			{
+				"title": "Consulting Biznesowy",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			},
+			{
+				"title": "Pricing Volume",
+				"description": "Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			},
+			{
+				"title": "Skalowanie Sprzedaży",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			},
+			{
+				"title": "Automatyzacja Procesów",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			},
+			{
+				"title": "Optymalizowanie Kosztów",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			},
+			{
+				"title": "Strony WWW",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+			}
+		]
+	},
+	"portfolio": {
+		"title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
+		"content": [
+			{
+				"text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów."
+			},
+			{
+				"text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji."
+			},
+			{ "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
+		],
+		"images": [
+			{
+				"src": "https://placehold.co/1200x800",
+				"alt": "1"
+			},
+			{
+				"src": "https://placehold.co/1200x800",
+				"alt": "2"
+			},
+			{
+				"src": "https://placehold.co/1200x800",
+				"alt": "3"
+			}
+		]
+	},
+	"experience": {
+		"title": "doświadczenie",
+		"content": [
+			{
+				"title": "Zarządzanie i rozwój biznesu",
+				"description": [
+					{ "text": "Ponad 10 lat doświadczenia w prowadzeniu i\nskalowaniu firm" },
+					{ "text": "Tworzenie strategii rozwoju dla małych i średnich przedsiębiorstw" },
+					{ "text": "Budowanie struktur organizacyjnych i zespołów sprzedażowych" }
+				]
+			},
+			{
+				"title": " IT, AI i automatyzacja",
+				"description": [
+					{ "text": "Wdrażanie nowoczesnych rozwiązań AI i automatyzacji procesów" },
+					{ "text": "Rozwój oprogramowania dla branży logistycznej i biznesowej" },
+					{ "text": "Optymalizacja działań firm poprzez dobór odpowiednich narzędzi IT" }
+				]
+			},
+			{
+				"title": "Logistyka i transport",
+				"description": [
+					{ "text": "Doświadczenie w zarządzaniu procesami logistycznymi" },
+					{ "text": "Tworzenie innowacyjnych systemów do monitorowania i analizy transportu" },
+					{ "text": "Optymalizacja kosztów i procesów w branży TSL" }
+				]
+			},
+			{
+				"title": "Sprzedaż i strategia cenowa",
+				"description": [
+					{ "text": "Skalowanie działów sprzedaży i budowanie skutecznych strategii pricingowych" },
+					{ "text": "Wdrażanie systemów CRM i automatyzacji działań handlowych" },
+					{ "text": "Negocjacje B2B i optymalizacja konwersji w sprzedaży" }
+				]
+			},
+			{
+				"title": "Consulting i optymalizacja kosztów",
+				"description": [
+					{ "text": "Doradztwo dla firm w zakresie strategii wzrostu i efektywności operacyjnej" },
+					{ "text": "Redukcja kosztów poprzez nowoczesne modele zarządzania i analizy danych" },
+					{ "text": "Współpraca z firmami w celu zwiększenia rentowności i skalowalności" }
+				]
+			},
+			{
+				"title": "Tworzenie stron WWW i budowanie marki online",
+				"description": [
+					{ "text": "Prowadzenie zespołu developerów w realizacji profesjonalnych stron WWW" },
+					{ "text": "Tworzenie nowoczesnych i zoptymalizowanych pod SEO stron dla firm" },
+					{
+						"text": "Integracja systemów i narzędzi marketingowych dla skutecznej obecności online"
+					}
+				]
+			}
+		]
+	},
+	"footer": {
+		"copyright": "© 2024 AR Consulting. Все права защищены.",
+		"socials": [
+			{ "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
+			{ "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
+			{ "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
+		]
+	}
 }
