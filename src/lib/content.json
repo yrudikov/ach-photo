@@ -163,6 +163,21 @@
 		},
 		"content": "„Skuteczna optymalizacja to klucz do wzrostu. Pomogę Ci osiągnąć lepsze wyniki poprzez strategię, automatyzację i nowoczesne podejście do zarządzania.”"
 	},
+	"focus": {
+		"title": "focus",
+		"items": [
+			{ "name": "SZTUCZNA INTELIGENCJA", "src": "/img/f-s-1.svg" },
+			{ "name": "OPTYMALIZACJA", "src": "/img/f-s-2.svg" },
+			{ "name": "STRATEGIA ROZWOJU I WZROSTU", "src": "/img/f-s-3.svg" },
+			{ "name": "WSPÓŁPRACA", "src": "/img/f-s-4.svg" },
+			{ "name": "TECHNOLOGIA INFORMATYCZNA", "src": "/img/f-s-5.svg" },
+			{ "name": "TARGETOWANIE", "src": "/img/f-s-6.svg" }
+		],
+		"image": {
+			"src": "/img/f-s-7.svg",
+			"alt": "WIZJA I INNOWACJA"
+		}
+	},
 	"footer": {
 		"copyright": "© 2024 AR Consulting. Все права защищены.",
 		"socials": [
