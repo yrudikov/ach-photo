@@ -26,6 +26,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@fontsource/darker-grotesque": "^5.2.5",
 		"framer-motion": "^12.4.7",
 		"svelte-carousel": "^1.0.25",
 		"svelte-motion": "^0.12.2"

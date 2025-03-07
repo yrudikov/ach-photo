@@ -4,7 +4,7 @@
 	import Icon from '@iconify/svelte';
 </script>
 
-<section id="experience">
+<section id="experience" class="experience-section">
 	<h1 class="section-title text-monserrat">{content.experience.title}</h1>
 	<Divider />
 	<article class="experience-container text-monserrat">
@@ -29,6 +29,9 @@
 
 <style lang="scss">
 	@use '$lib/styles/_mixins' as *;
+	.experience-section {
+		margin: 20px 0 0 0;
+	}
 
 	.experience-container {
 		display: grid;
@@ -71,6 +74,10 @@
 	}
 
 	@include media(tablet) {
+		.experience-section {
+			margin: 40px 0 0 0;
+		}
+
 		.experience-container {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: auto auto auto;
