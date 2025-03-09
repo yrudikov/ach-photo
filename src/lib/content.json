@@ -1,7 +1,7 @@
 {
 	"site": {
 		"title": "AR Consulting",
-		"description": "Ваш надежный партнер в мире бизнеса и консалтинга."
+		"description": "Twój niezawodny partner w świecie biznesu i konsultingu."
 	},
 	"check": "is Life!",
 	"header": {
@@ -210,7 +210,7 @@
 		]
 	},
 	"footer": {
-		"copyright": "© 2024 AR Consulting. Все права защищены.",
+		"copyright": "© 2024 AR Consulting. Wszelkie prawa zastrzeżone.",
 		"socials": [
 			{ "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
 			{ "name": "Facebook", "link": "https://facebook.com/ar-consulting" },

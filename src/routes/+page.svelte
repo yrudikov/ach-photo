@@ -9,10 +9,12 @@
 	import Portfolio from '$lib/components/Portfolio.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import OfferInfo from '$lib/components/OfferInfo.svelte';
+	import SEO from '$lib/components/SEO.svelte';
 	import '$lib/styles/global.scss';
 	import '$lib/styles/_mixins.scss';
 </script>
 
+<SEO />
 <Header />
 <main class="container">
 	<Hero />

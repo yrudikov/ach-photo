@@ -77,10 +77,11 @@
 	.carousel-slide {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		padding: 0 2px;
 	}
 	:global(.sc-carousel__pages-container) {
-		margin: 0 -2px; /* Компенсируем padding слайдов */
+		margin: 0 -2px;
 	}
 
 	.fallback-container {
