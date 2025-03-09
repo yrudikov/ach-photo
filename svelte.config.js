@@ -5,7 +5,28 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	preprocess: [vitePreprocess()],
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			
+			pages: 'build',
+			assets: 'build',
+			
+			fallback: 'index.html',
+			
+			precompress: true
+		}),
+		
+		prerender: {
+			
+			default: true,
+			
+			handleHttpError: ({ path, referrer, message }) => {
+				
+				if (path.startsWith('/api')) return;
+
+			
+				console.warn(`${path} referred from ${referrer}: ${message}`);
+			}
+		}
 	}
 };
 
