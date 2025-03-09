@@ -10,7 +10,7 @@
 	});
 </script>
 
-<section id="contact" class="focus-section">
+<section id="focus" class="focus-section">
 	<h1 class="section-title text-monserrat">{content.focus.title}</h1>
 	<Divider />
 	<article class="focus-container text-monserrat">

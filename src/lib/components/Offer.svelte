@@ -36,7 +36,7 @@
 			<div bind:this={desktopContent} class="offer-content desktop-content"
 					 in:fly={{ duration: 700, x: 100 }}
 					 out:fly={{ duration: 700, x: 100 }}>
-				<p>{content.offer.items[activeIndex]?.description}</p>
+				<p class="text-monserrat">{content.offer.items[activeIndex]?.description}</p>
 			</div>
 		{/if}
 	</article>
