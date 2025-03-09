@@ -1,14 +1,14 @@
 <script>
-	import Carousel from 'svelte-carousel'
-	import content from "$lib/content.json";
+	import Carousel from 'svelte-carousel';
+	import content from '$lib/content.json';
 	import { browser } from '$app/environment';
-	
+
 	let carousel;
-	
+
 	function goToPrev() {
 		if (carousel) carousel.goToPrev();
 	}
-	
+
 	function goToNext() {
 		if (carousel) carousel.goToNext();
 	}
@@ -30,16 +30,30 @@
 				</div>
 			{/each}
 		</Carousel>
-		
+
 		<button class="nav-button prev-button" on:click={goToPrev} aria-label="Previous slide">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18l-6-6 6-6"/>
+				<path
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M15 18l-6-6 6-6"
+				/>
 			</svg>
 		</button>
-		
+
 		<button class="nav-button next-button" on:click={goToNext} aria-label="Next slide">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18l6-6-6-6"/>
+				<path
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M9 18l6-6-6-6"
+				/>
 			</svg>
 		</button>
 	{:else}
@@ -61,17 +75,17 @@
 	}
 
 	.carousel-slide {
+		display: flex;
+		justify-content: center;
 		padding: 0 2px;
 	}
 	:global(.sc-carousel__pages-container) {
-     margin: 0 -2px ; /* Компенсируем padding слайдов */
-   }
+		margin: 0 -2px; /* Компенсируем padding слайдов */
+	}
 
 	.fallback-container {
 		width: 100%;
 	}
-
-	
 
 	.carousel-image {
 		width: 100%;
@@ -81,7 +95,7 @@
 	}
 
 	.nav-button {
-		display: none; 
+		display: none;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -95,7 +109,9 @@
 		justify-content: center;
 		z-index: 10;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-		transition: background-color 0.3s, transform 0.2s;
+		transition:
+			background-color 0.3s,
+			transform 0.2s;
 	}
 
 	.nav-button:hover {
@@ -112,17 +128,17 @@
 			width: 66.67%;
 			margin: 30px auto 0;
 		}
-		
+
 		.nav-button {
-			display: flex; 
+			display: flex;
 			width: 30px;
 			height: 30px;
 		}
-		
+
 		.prev-button {
 			left: 15px;
 		}
-		
+
 		.next-button {
 			right: 20px;
 		}

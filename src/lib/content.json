@@ -88,16 +88,36 @@
 		],
 		"images": [
 			{
-				"src": "https://placehold.co/1200x800",
-				"alt": "1"
+				"src": "/img/carousel/diet-a-1.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+ z hasłem 'Dieta dla każdego'. Zdrowe odżywianie bez tajemnic, regulacja masy ciała, koniec z niedoborami, poprawa zdrowia i zdrowa relacja z jedzeniem."
 			},
 			{
-				"src": "https://placehold.co/1200x800",
-				"alt": "2"
+				"src": "/img/carousel/diet-a-2.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+."
 			},
 			{
-				"src": "https://placehold.co/1200x800",
-				"alt": "3"
+				"src": "/img/carousel/diet-a-3.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+."
+			},
+			{
+				"src": "/img/carousel/a-ch-1.webp",
+				"alt": "Zrzut ekranu strony Anny Cheby, specjalistki w dziedzinie fotografii kynologicznej, felinologicznej, biznesowej, portretowej, produktowej, okolicznościowej i ślubnej. Opis pasji do fotografii, uchwycenia emocji i zatrzymania ulotnych chwil w wyjątkowych kadrach."
+			},
+			{
+				"src": "/img/carousel/a-ch-2.webp",
+				"alt": "Zrzut ekranu strony Anny Cheby."
+			},
+			{
+				"src": "/img/carousel/e2t-1.webp",
+				"alt": "Zrzut ekranu strony Email2TMS – aplikacji wspierającej cyfryzację transportu. Interfejs użytkownika dostosowany do zarządzania transportem i usprawniania pracy spedytorów."
+			},
+			{
+				"src": "/img/carousel/e2t-2.webp",
+				"alt": "Zrzut ekranu strony Email2TMS."
+			},
+			{
+				"src": "/img/carousel/e2t-3.webp",
+				"alt": "Zrzut ekranu strony Email2TMS."
 			}
 		]
 	},

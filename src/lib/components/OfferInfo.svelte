@@ -4,7 +4,7 @@
 
 <section class="offer-info">
 	<div class="container">
-		<h1 class="section-title offer-info-title">{content.offerInfo.description}</h1>
+		<h1 class="offer-info-title text-bebas">{content.offerInfo.description}</h1>
 	</div>
 </section>
 
@@ -19,11 +19,12 @@
 		font-size: var(--font-size-small);
 		letter-spacing: 1px;
 		font-weight: 100;
+		text-align: center;
 	}
 
 	@include media(tablet) {
 		.offer-info-title {
-			font-size: var(--font-size-lg);
+			font-size: var(--font-size-xl);
 			letter-spacing: 2px;
 		}
 	}
