@@ -1,0 +1,1 @@
+{"version":3,"file":"0.CxhZdg3A.js","sources":["../../../../../../src/routes/+layout.js"],"sourcesContent":["export const prerender = true;\n\nexport const ssr = false;\n\nexport const csr = true;\n"],"names":[],"mappings":"+DAAO,iEAIY,aAJM,OAEN"}
