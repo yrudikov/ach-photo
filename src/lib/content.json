@@ -1,0 +1,223 @@
+{
+	"site": {
+		"title": "AR Consulting",
+		"description": "Twój niezawodny partner w świecie biznesu i konsultingu."
+	},
+	"check": "is Life!",
+	"header": {
+		"logo": "/img/logo-consulting.png",
+		"nav": [
+			{ "name": "HOME", "link": "#hero" },
+			{ "name": "O MNIE", "link": "#about" },
+			{ "name": "OFERTA", "link": "#offer" },
+			{ "name": "DOŚWIADCZENIE", "link": "#experience" },
+			{ "name": "KONTAKT", "link": "#contact" }
+		]
+	},
+	"hero": {
+		"title": "4.0 CONSULTING",
+		"subtitle": [{ "item": "CYFRYZACJA" }, { "item": "UNIFIKACJA" }, { "item": "OPTYMALIZACJA" }],
+		"heroImage": "/img/globus.svg"
+	},
+	"about": {
+		"title": "Artur, Mariusz Ryszka",
+		"aboutList": [
+			{
+				"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."
+			},
+			{
+				"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."
+			},
+			{
+				"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "
+			},
+			{
+				"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "
+			},
+			{
+				"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."
+			},
+			{
+				"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."
+			}
+		],
+		"image": {
+			"src": "/img/about-img.webp",
+			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+		}
+	},
+	"offer": {
+		"title": "OFERUJEMY",
+		"items": [
+			{
+				"title": "Consulting Biznesowy",
+				"description": "Pomagam firmom dostosować strategie biznesowe do dynamicznie zmieniającego się rynku, wspierając ich stabilny rozwój i budowanie przewagi konkurencyjnej. Moje indywidualne podejście pozwala usprawniać procesy, zwiększać efektywność operacyjną i lepiej wykorzystywać dostępne zasoby."
+			},
+			{
+				"title": "Pricing & Volume",
+				"description": "Skuteczna polityka cenowa i zarządzanie wolumenem sprzedaży to kluczowe elementy rentowności. Optymalizuję strategie cenowe, aby firmy mogły maksymalizować zyski, utrzymać konkurencyjność i jednocześnie oferować realną wartość swoim klientom."
+			},
+			{
+				"title": "Skalowanie Sprzedaży",
+				"description": "Pomagam firmom skutecznie zwiększać sprzedaż, wdrażając dopasowane strategie i nowoczesne technologie. Prowadzę szkolenia dla zespołów sprzedażowych i marketingowych, pomagając im osiągać wyższą efektywność. Moje rozwiązania umożliwiają ekspansję na nowe rynki, wzrost przychodów i dynamiczny rozwój biznesu."
+			},
+			{
+				"title": "Automatyzacja Procesów",
+				"description": "Automatyzacja to klucz do większej efektywności i oszczędności. Wdrażam inteligentne systemy, które usprawniają operacje biznesowe, eliminują błędy i pozwalają firmom skupić się na strategii, zamiast na powtarzalnych zadaniach."
+			},
+			{
+				"title": "Optymalizacja Kosztów",
+				"description": "Pomagam firmom identyfikować obszary nadmiernych wydatków oraz wdrażam strategie redukcji kosztów bez kompromisów w zakresie jakości. Moje podejście pozwala na efektywne zarządzanie zasobami i długoterminowe zwiększenie rentowności."
+			},
+			{
+				"title": "Strony WWW",
+				"description": "Tworzymy nowoczesne, responsywne i funkcjonalne strony internetowe, które budują profesjonalny wizerunek firm i zwiększają ich skuteczność marketingową. Nasze projekty są optymalizowane pod SEO, a także w pełni dostosowane do potrzeb użytkowników. Oferujemy również gotowe rozwiązania, które pozwalają uruchomić profesjonalną stronę już w kilka dni."
+			}
+		]
+	},
+	"portfolio": {
+		"title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
+		"content": [
+			{
+				"text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów."
+			},
+			{
+				"text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji."
+			},
+			{ "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
+		],
+		"images": [
+			{
+				"src": "/img/carousel/diet-a-1.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+ z hasłem 'Dieta dla każdego'. Zdrowe odżywianie bez tajemnic, regulacja masy ciała, koniec z niedoborami, poprawa zdrowia i zdrowa relacja z jedzeniem."
+			},
+			{
+				"src": "/img/carousel/diet-a-2.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+."
+			},
+			{
+				"src": "/img/carousel/diet-a-3.webp",
+				"alt": "Zrzut ekranu strony DietetykA A+."
+			},
+			{
+				"src": "/img/carousel/a-ch-1.webp",
+				"alt": "Zrzut ekranu strony Anny Cheby, specjalistki w dziedzinie fotografii kynologicznej, felinologicznej, biznesowej, portretowej, produktowej, okolicznościowej i ślubnej. Opis pasji do fotografii, uchwycenia emocji i zatrzymania ulotnych chwil w wyjątkowych kadrach."
+			},
+			{
+				"src": "/img/carousel/a-ch-2.webp",
+				"alt": "Zrzut ekranu strony Anny Cheby."
+			},
+			{
+				"src": "/img/carousel/e2t-1.webp",
+				"alt": "Zrzut ekranu strony Email2TMS – aplikacji wspierającej cyfryzację transportu. Interfejs użytkownika dostosowany do zarządzania transportem i usprawniania pracy spedytorów."
+			},
+			{
+				"src": "/img/carousel/e2t-2.webp",
+				"alt": "Zrzut ekranu strony Email2TMS."
+			},
+			{
+				"src": "/img/carousel/e2t-3.webp",
+				"alt": "Zrzut ekranu strony Email2TMS."
+			}
+		]
+	},
+	"experience": {
+		"title": "doświadczenie",
+		"content": [
+			{
+				"title": "Zarządzanie i rozwój biznesu",
+				"description": [
+					{ "text": "Ponad 10 lat doświadczenia w prowadzeniu i\nskalowaniu wyników firm" },
+					{ "text": "Tworzenie strategii rozwoju dla małych i średnich przedsiębiorstw" },
+					{ "text": "Budowanie struktur organizacyjnych i zespołów sprzedażowych" }
+				]
+			},
+			{
+				"title": " IT, AI i automatyzacja",
+				"description": [
+					{ "text": "Wdrażanie nowoczesnych rozwiązań AI i automatyzacji procesów" },
+					{ "text": "Rozwój oprogramowania dla branży logistycznej i biznesowej" },
+					{ "text": "Optymalizacja działań firm poprzez dobór odpowiednich narzędzi IT" }
+				]
+			},
+			{
+				"title": "Logistyka i transport",
+				"description": [
+					{ "text": "Doświadczenie w zarządzaniu procesami logistycznymi" },
+					{ "text": "Tworzenie innowacyjnych systemów do monitorowania i analizy transportu" },
+					{ "text": "Optymalizacja kosztów i procesów w branży TSL" }
+				]
+			},
+			{
+				"title": "Sprzedaż i strategia cenowa",
+				"description": [
+					{ "text": "Skalowanie działów sprzedaży i budowanie skutecznych strategii pricingowych" },
+					{ "text": "Wdrażanie systemów CRM i automatyzacji działań handlowych" },
+					{ "text": "Negocjacje B2B i optymalizacja konwersji w sprzedaży" }
+				]
+			},
+			{
+				"title": "Consulting i optymalizacja kosztów",
+				"description": [
+					{ "text": "Doradztwo dla firm w zakresie strategii wzrostu i efektywności operacyjnej" },
+					{ "text": "Redukcja kosztów poprzez nowoczesne modele zarządzania i analizy danych" },
+					{ "text": "Współpraca z firmami w celu zwiększenia rentowności i skalowalności" }
+				]
+			},
+			{
+				"title": "Tworzenie stron WWW i budowanie marki online",
+				"description": [
+					{ "text": "Prowadzenie zespołu developerów w realizacji profesjonalnych stron WWW" },
+					{ "text": "Tworzenie nowoczesnych i zoptymalizowanych pod SEO stron dla firm" },
+					{
+						"text": "Integracja systemów i narzędzi marketingowych dla skutecznej obecności online"
+					}
+				]
+			}
+		]
+	},
+	"citation": {
+		"img": {
+			"src": "/img/citation-image-blur.webp",
+			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+		},
+		"content": "„Skuteczna optymalizacja to klucz do wzrostu. Pomogę Ci osiągnąć lepsze wyniki poprzez strategię, automatyzację i nowoczesne podejście do zarządzania.”"
+	},
+	"focus": {
+		"title": "focus",
+		"items": [
+			{ "name": "SZTUCZNA INTELIGENCJA", "src": "/img/f-s-1.svg" },
+			{ "name": "OPTYMALIZACJA", "src": "/img/f-s-2.svg" },
+			{ "name": "STRATEGIA ROZWOJU I WZROSTU", "src": "/img/f-s-3.svg" },
+			{ "name": "WSPÓŁPRACA", "src": "/img/f-s-4.svg" },
+			{ "name": "TECHNOLOGIA INFORMATYCZNA", "src": "/img/f-s-5.svg" },
+			{ "name": "TARGETOWANIE", "src": "/img/f-s-6.svg" }
+		],
+		"image": {
+			"src": "/img/f-s-7.svg",
+			"alt": "WIZJA I INNOWACJA"
+		}
+	},
+	"contact": {
+		"title": "Kontakt",
+		"logo": "/img/logo-consulting.png",
+		"background": "/img/contact-image.webp",
+		"content": [
+			{ "icon": "", "text": "Śląsk, Polska" },
+			{ "icon": "", "text": "+48 884 885 165" },
+			{ "icon": "", "text": "ryszka.artur.b2b@gmail.com" },
+			{ "icon": "", "text": "www.business-consulting.top" }
+		]
+	},
+	"footer": {
+		"copyright": "© 2024 AR Consulting. Wszelkie prawa zastrzeżone.",
+		"socials": [
+			{ "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
+			{ "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
+			{ "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
+		]
+	},
+	"offerInfo": {
+		"description": "Ta strona stanowi wizualizację \"wariantu 1\" do umowy o utworzenie strony www."
+	}
+}
