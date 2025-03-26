@@ -7,7 +7,7 @@
 	let isMobile = $state(false);
 
 	const checkScreenSize = () => {
-		isMobile = window.innerWidth <= 768;
+		isMobile = window.innerWidth <= 767;
 	};
 
 	onMount(() => {

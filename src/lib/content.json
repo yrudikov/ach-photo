@@ -23,25 +23,19 @@
 		"heroImageAlt": "Anna Cheba, Fotograf"
 	},
 	"about": {
-		"title": "Artur, Mariusz Ryszka",
+		"title": "Anna Cheba",
 		"aboutList": [
 			{
-				"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."
+				"content": "Nazywam się <b>Anna Cheba</b> i fotografia to moja największa pasja. \nJest to sposób na zatrzymanie ulotnych chwil i opowiadanie historii <b>obrazem</b>."
 			},
 			{
-				"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."
+				"content": "Od zawsze fascynowały mnie emocje ukryte w spojrzeniach, radość zamknięta w uśmiechach i magia momentów, które warto zachować na zawsze."
 			},
 			{
-				"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "
+				"content": "Każda sesja to dla mnie coś więcej niż praca - to szansa na stworzenie niepowtarzalnych wspomnień."
 			},
 			{
-				"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "
-			},
-			{
-				"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."
-			},
-			{
-				"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."
+				"content": "Do każdego zlecenia podchodzę z ogromnym zaangażowaniem i sercem, dbając o to, aby zdjęcia oddawały prawdziwe <b>emocje i piękno chwili.</b>"
 			}
 		],
 		"image": {

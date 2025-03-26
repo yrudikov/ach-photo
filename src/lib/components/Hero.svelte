@@ -38,6 +38,7 @@
     text-transform: uppercase;
     font-family: var(--font-title);
     margin-top: 40px;
+		gap: 2rem;
   }
 
   .hero-titles-wrapper {
@@ -77,6 +78,7 @@
     .hero {
       flex-direction: row;
       justify-content: space-between;
+      gap: 0;
     }
     .hero-titles-wrapper {
       padding: 300px 0;
@@ -109,6 +111,7 @@
     .hero {
       flex-direction: row;
       justify-content: space-between;
+      gap: 0;
     }
 
     .hero-titles-wrapper {
