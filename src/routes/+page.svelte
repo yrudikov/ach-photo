@@ -1,4 +1,6 @@
 <script>
+	import { onDestroy } from 'svelte';
+	import { screen } from '$lib/store/useScreen.js';
 	import Header from '$lib/components/Header.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
@@ -10,6 +12,10 @@
 	import Contact from '$lib/components/Contact.svelte';
 	import OfferInfo from '$lib/components/OfferInfo.svelte';
 	import SEO from '$lib/components/SEO.svelte';
+
+	onDestroy(() => {
+		screen.cleanup();
+	});
 </script>
 
 <SEO />

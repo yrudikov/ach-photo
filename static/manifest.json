@@ -8,14 +8,14 @@
 	"theme_color": "#131213",
 	"icons": [
 		{
-			"src": "/img/logo-consulting.png",
+			"src": "/img/logo-header.webp",
 			"sizes": "192x192",
-			"type": "image/png"
+			"type": "image/webp"
 		},
 		{
-			"src": "/img/logo-consulting.png",
+			"src": "/img/logo-header.webp",
 			"sizes": "512x512",
-			"type": "image/png"
+			"type": "image/webp"
 		}
 	]
 }

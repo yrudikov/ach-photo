@@ -4,7 +4,6 @@
 	import { onMount } from 'svelte';
 
 	let open = $state(false);
-
 	let isMobile = $state(false);
 
 	const checkScreenSize = () => {
@@ -24,7 +23,7 @@
 		const targetElement = document.getElementById(targetId);
 
 		if (targetElement) {
-			const offset = !isMobile ? 140 : 70;
+			const offset = !isMobile ? 70 : 70;
 			const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
 
 			window.scrollTo({ top: elementPosition, behavior: 'smooth' });
@@ -36,7 +35,13 @@
 <header class="header">
 	<div class="container">
 		<nav class="nav">
-			{#each content.header.nav as item}
+			<div class="header-logo-wrapper">
+				<a href={content.header.nav[0].link} class=" text-nav-about-ul" onclick={scrollToSection}>
+					<img src="/img/logo-header.webp" alt="Logo" class="header-logo" />
+				</a>
+
+			</div>
+			{#each content.header.nav.slice(1) as item}
 				<a href={item.link} class="nav-link text-nav-about-ul" onclick={scrollToSection}
 					>{item.name}</a
 				>
@@ -45,14 +50,14 @@
 
 		{#if isMobile}
 			<div class="header-logo-wrapper">
-				<img src="/img/logo-consulting.png" alt="Logo" class="header-logo" />
+				<img src="/img/logo-header-mobile.webp" alt="Logo" class="header-logo" />
 			</div>
-			<div style="filter: drop-shadow(0 0 3px rgba(19, 18, 19, 1));">
+			<div style="filter: drop-shadow(0 0 10px var(--color-secondary));">
 				<Hamburger
 					bind:open
 					type="spin"
-					--color="var(--color-text)"
-					--active-color="var(--color-text)"
+					--color="var(--color-textSecondary)"
+					--active-color="var(--color-textSecondary)"
 					--padding="12px 15px 10px 15px"
 				/>
 			</div>
@@ -92,7 +97,7 @@
 	}
 
 	.header-logo-wrapper {
-		max-width: 150px;
+		max-width: 80px;
 		display: flex;
 	}
 	.header-logo {
@@ -100,13 +105,13 @@
 		height: 100%;
 		object-fit: contain;
 		align-self: center;
-		filter: drop-shadow(0 0 10px rgba(19, 18, 19, 1));
+		filter: drop-shadow(0 0 1px var(--color-secondary));
 	}
 
 	.mobile-nav {
 		position: absolute;
-		width: 100%;
-		top: 60px;
+		width: 92%;
+		top: 75px;
 		left: 50%;
 		transform: translateX(-50%);
 		background: var(--color-backgroundSecondary);
@@ -114,12 +119,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
-		border-radius: 20px;
-		box-shadow: 0 0 8px rgba(19, 18, 19, 1);
+		border-radius: var(--border-radius-primary);
+		box-shadow: 0 0 6px var(--color-secondary);
 	}
 
 	.mobile-nav-link {
-		color: var(--color-textSecondary);
+		color: var(--color-text-white);
 		text-decoration: none;
 		padding: 0;
 		background: var(--color-backgroundSecondary);
@@ -131,34 +136,36 @@
 	}
 
 	@include media(tablet) {
-		.header {
-			position: fixed;
-			top: 60px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 100%;
-			background-color: transparent;
-			z-index: 1000;
-		}
+    .header {
+      position: sticky;
+      top: 0;
+      margin: 60px auto -132px;
+      width: 100%;
+      background-color: transparent;
+      z-index: 1000;
+			padding: 0;
+    }
 
 		.nav {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			max-width: 700px;
+			max-width: 800px;
 			width: 100%;
 			background-color: var(--color-backgroundSecondary);
-			padding: 0.5rem 1.5rem;
-			border-radius: 3px 25px 25px 3px;
-			box-shadow: 0 0 8px rgba(19, 18, 19, 1);
+			padding: 0 8rem 0 3rem;
+			border-radius: 1px;
 		}
 
 		.nav-link {
 			text-decoration: none;
-			color: var(--color-textSecondary);
-			font-weight: bold;
+			color: var(--color-text-white);
+			font-weight: 600;
 			background: transparent;
 			border-radius: 20px;
+			letter-spacing: 4px;
+			font-size: var(--font-size-xl);
+			margin-top: 5px;
 		}
 
 		.text-nav-about-ul:hover {

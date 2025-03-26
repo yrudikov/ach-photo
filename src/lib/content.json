@@ -5,19 +5,22 @@
 	},
 	"check": "is Life!",
 	"header": {
-		"logo": "/img/logo-consulting.png",
+		"logo": "/img/logo-header.webp",
 		"nav": [
 			{ "name": "HOME", "link": "#hero" },
 			{ "name": "O MNIE", "link": "#about" },
 			{ "name": "OFERTA", "link": "#offer" },
-			{ "name": "DOŚWIADCZENIE", "link": "#experience" },
+			{ "name": "PORTFOLIO", "link": "#experience" },
 			{ "name": "KONTAKT", "link": "#contact" }
 		]
 	},
 	"hero": {
-		"title": "4.0 CONSULTING",
-		"subtitle": [{ "item": "CYFRYZACJA" }, { "item": "UNIFIKACJA" }, { "item": "OPTYMALIZACJA" }],
-		"heroImage": "/img/globus.svg"
+		"title": "ACH Fotografia",
+		"subtitle": [{ "item": "Zatrzymuję chwile" }, { "item": "opowiadam historie" }],
+		"heroImageDesktop": "/img/hero-img-desktop.webp",
+		"heroImageTablet": "/img/hero-img-tablet.webp",
+		"heroImageMobile": "/img/hero-img-mobile.webp",
+		"heroImageAlt": "Anna Cheba, Fotograf"
 	},
 	"about": {
 		"title": "Artur, Mariusz Ryszka",

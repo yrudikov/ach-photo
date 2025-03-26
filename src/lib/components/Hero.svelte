@@ -1,11 +1,10 @@
 <script>
 	import content from '$lib/content.json';
+	import { screen } from '$lib/store/useScreen.js';
 
-	let heroBackgroundStyle = `background-image: linear-gradient(to right, rgba(19, 18, 19, 0) 20%, rgba(19, 18, 19, 1) 60%),
-                    url(${content.hero.heroImage});`;
 </script>
 
-<section id="hero" style={heroBackgroundStyle}>
+<section id="hero" class="hero">
 	<div class="hero-titles-wrapper">
 		<h1 class="hero-title">{content.hero.title}</h1>
 		<div class="hero-descriptions">
@@ -14,99 +13,132 @@
 			{/each}
 		</div>
 	</div>
-	<div class="hero-logo-wrapper">
-		<img src="/img/logo-consulting.png" alt="Logo" class="hero-logo" />
-		<div class="hero-divider"></div>
-	</div>
+	{#if $screen.isDesktop}
+		<div class="hero-img-wrapper-desktop">
+			<img src={content.hero.heroImageDesktop} alt={content.hero.heroImageAlt} class="hero-img">
+		</div>
+	{:else if $screen.isTablet}
+		<div class="hero-img-wrapper-tablet">
+			<img src={content.hero.heroImageTablet} alt={content.hero.heroImageAlt} class="hero-img">
+		</div>
+	{:else}
+		<div class="hero-img-wrapper-mobile">
+			<img src={content.hero.heroImageMobile} alt={content.hero.heroImageAlt} class="hero-img">
+		</div>
+	{/if}
 </section>
 
 <style lang="scss">
-	@use '$lib/styles/_mixins' as *;
+  @use '$lib/styles/_mixins' as *;
 
-	#hero {
-		display: block;
-		background-size: 430px auto;
-		background-position: 100px -22px;
-		background-repeat: no-repeat;
-		width: 100%;
-	}
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    margin-top: 40px;
+  }
 
-	.hero-titles-wrapper {
-		background: rgba(19, 18, 19, 0.5);
-		padding: 200px 0;
-	}
+  .hero-titles-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-	.hero-descriptions {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		margin-top: 1rem;
-	}
+  }
 
-	.hero-title {
-		font-family: var(--font-subtitle), serif;
-		color: white;
-		font-size: 2.5rem;
-		font-weight: 600;
-	}
+  .hero-descriptions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
 
-	.hero-subtitle {
-		font-family: var(--font-title), serif;
-		font-size: 1.1rem;
-		font-weight: 300;
-	}
-	.hero-logo-wrapper {
-		display: none;
-	}
+  .hero-title {
+    color: var(--color-text);
+    font-size: 3rem;
+    font-weight: 600;
 
-	@include media(tablet) {
-		#hero {
-			background-size: 630px auto;
-			background-position: 140% -30px;
-			background-repeat: no-repeat;
-			width: 100%;
-		}
-		.hero-titles-wrapper {
-			background: rgba(19, 18, 19, 0);
-			padding: 250px 30px;
-		}
-		.hero-descriptions {
-			display: flex;
-			flex-direction: row;
-			gap: 1rem;
-			margin-top: 0;
-		}
-		.hero-title {
-			font-family: var(--font-subtitle), serif;
-			color: white;
-			font-size: 5rem;
-			font-weight: 300;
-		}
+  }
 
-		.hero-subtitle {
-			font-family: var(--font-title), serif;
-			font-size: 2rem;
-		}
+  .hero-subtitle {
+    color: var(--color-textSecondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 
-		.hero-logo-wrapper {
-			display: block;
-			padding: 0 30px;
-			position: relative;
-			.hero-logo {
-				position: absolute;
-				top: -32px;
-				left: 27px;
-			}
-			.hero-divider {
-				width: 100%;
-				height: 5px;
-				background: linear-gradient(
-					to right,
-					var(--color-backgroundSecondary) 60%,
-					var(--color-background) 100%
-				);
-				margin: 20px;
-			}
-		}
-	}
+  .hero-img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @include media(tablet) {
+    .hero {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .hero-titles-wrapper {
+      padding: 300px 0;
+      text-align: center;
+    }
+    .hero-descriptions {
+      flex-direction: row;
+      margin-top: 0;
+      letter-spacing: 3px;
+    }
+
+    .hero-img-wrapper-tablet {
+      width: 80%;
+      display: flex;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      letter-spacing: 16px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @include media(desktop) {
+
+    .hero {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .hero-titles-wrapper {
+      margin-left: 50px;
+      padding: 200px 0;
+    }
+    .hero-descriptions {
+      flex-direction: column;
+      gap: 4rem;
+      margin-top: 0;
+    }
+
+    .hero-img-wrapper-desktop {
+      display: block;
+      max-width: 320px;
+      padding: 40px 0;
+    }
+
+    .hero-descriptions {
+      flex-direction: row;
+    }
+
+    .hero-title {
+      font-size: 5rem;
+      letter-spacing: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 2.5rem;
+    }
+
+  }
 </style>
