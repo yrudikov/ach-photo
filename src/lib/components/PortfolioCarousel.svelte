@@ -116,7 +116,7 @@
 	}
 
 	.nav-button:hover {
-		background-color: var(--color-backgroundSecondaryHower, rgba(255, 255, 255, 1));
+		background-color: var(--background-dark-brown, rgba(255, 255, 255, 1));
 		transform: translateY(-50%) scale(1.1);
 	}
 

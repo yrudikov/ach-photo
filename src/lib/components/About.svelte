@@ -11,7 +11,7 @@
 </script>
 
 <section id="about" class="about-section">
-	<SectionTitle {sectionTitleProps}/>
+	<SectionTitle {sectionTitleProps} />
 	<article class="about-article">
 		<h1 class="about-title ">{content.about.title}</h1>
 		<ul class="about-list">
@@ -45,8 +45,17 @@
 		position: relative;
 	}
 
+  .about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
 	.about-article {
     filter: drop-shadow(0 0 2px var(--color-secondary));
+    z-index: 2;
 	}
 
 	.about-title {
@@ -102,7 +111,7 @@
       transform: translateX(-50%);
       width: 100vw;
       height: 100%;
-      background: var(--background-about);
+      background: var(--background-light-brown);
       z-index: -1;
     }
 

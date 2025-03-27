@@ -1,7 +1,7 @@
 {
 	"site": {
-		"title": "AR Consulting",
-		"description": "Twój niezawodny partner w świecie biznesu i konsultingu."
+		"title": "Anna Cheba Fotografia",
+		"description": "Zatrzymuję emocje i tworzę wyjątkowe wspomnienia dzięki magii fotografii."
 	},
 	"check": "is Life!",
 	"header": {
@@ -20,7 +20,7 @@
 		"heroImageDesktop": "/img/hero-img-desktop.webp",
 		"heroImageTablet": "/img/hero-img-tablet.webp",
 		"heroImageMobile": "/img/hero-img-mobile.webp",
-		"heroImageAlt": "Anna Cheba, Fotograf"
+		"heroImageAlt": "Anna Cheba z psem w zielonym plenerze – chwila bliskości i spokoju w otoczeniu natury\n"
 	},
 	"about": {
 		"title": "Anna Cheba",
@@ -40,35 +40,60 @@
 		],
 		"image": {
 			"src": "/img/about-img.webp",
-			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+			"alt": "Anna Cheba z psem podczas spaceru leśną drogą – pasja do fotografii i wyjątkowa więź z czworonogiem."
 		}
 	},
 	"offer": {
 		"title": "OFERUJEMY",
 		"items": [
 			{
-				"title": "Consulting Biznesowy",
-				"description": "Pomagam firmom dostosować strategie biznesowe do dynamicznie zmieniającego się rynku, wspierając ich stabilny rozwój i budowanie przewagi konkurencyjnej. Moje indywidualne podejście pozwala usprawniać procesy, zwiększać efektywność operacyjną i lepiej wykorzystywać dostępne zasoby."
+				"title": "Sesje plenerowe psów",
+				"description": {
+					"src": "/img/offerImages/1-o-i.webp",
+					"alt": "Portret psa na świeżym powietrzu, sesja plenerowa"
+				}
 			},
 			{
-				"title": "Pricing & Volume",
-				"description": "Skuteczna polityka cenowa i zarządzanie wolumenem sprzedaży to kluczowe elementy rentowności. Optymalizuję strategie cenowe, aby firmy mogły maksymalizować zyski, utrzymać konkurencyjność i jednocześnie oferować realną wartość swoim klientom."
+				"title": "Sesje miotów",
+				"description": {
+					"src": "/img/offerImages/2-o-i.webp",
+					"alt": "Śpiący szczeniak na niebieskim tle — sesja miotu"
+				}
 			},
 			{
-				"title": "Skalowanie Sprzedaży",
-				"description": "Pomagam firmom skutecznie zwiększać sprzedaż, wdrażając dopasowane strategie i nowoczesne technologie. Prowadzę szkolenia dla zespołów sprzedażowych i marketingowych, pomagając im osiągać wyższą efektywność. Moje rozwiązania umożliwiają ekspansję na nowe rynki, wzrost przychodów i dynamiczny rozwój biznesu."
+				"title": "Sesje podczas wystaw",
+				"description": {
+					"src": "/img/offerImages/3-o-i.webp",
+					"alt": "Pies w pozycji wystawowej z odbiciem na podłodze"
+				}
 			},
 			{
-				"title": "Automatyzacja Procesów",
-				"description": "Automatyzacja to klucz do większej efektywności i oszczędności. Wdrażam inteligentne systemy, które usprawniają operacje biznesowe, eliminują błędy i pozwalają firmom skupić się na strategii, zamiast na powtarzalnych zadaniach."
+				"title": "Sesje plenerowe",
+				"description": {
+					"src": "/img/offerImages/4-o-i.webp",
+					"alt": "Kobieta na moście w miejskim plenerze"
+				}
 			},
 			{
-				"title": "Optymalizacja Kosztów",
-				"description": "Pomagam firmom identyfikować obszary nadmiernych wydatków oraz wdrażam strategie redukcji kosztów bez kompromisów w zakresie jakości. Moje podejście pozwala na efektywne zarządzanie zasobami i długoterminowe zwiększenie rentowności."
+				"title": "Sesje okolicznościowe",
+				"description": {
+					"src": "/img/offerImages/5-o-i.webp",
+					"alt": "Kobieta w ciąży w różowej sukni i wianku na tle natury"
+				}
 			},
 			{
-				"title": "Strony WWW",
-				"description": "Tworzymy nowoczesne, responsywne i funkcjonalne strony internetowe, które budują profesjonalny wizerunek firm i zwiększają ich skuteczność marketingową. Nasze projekty są optymalizowane pod SEO, a także w pełni dostosowane do potrzeb użytkowników. Oferujemy również gotowe rozwiązania, które pozwalają uruchomić profesjonalną stronę już w kilka dni."
+				"title": "Oferta ślubno-weselna",
+				"description": {
+					"src": "/img/offerImages/6-o-i.webp",
+					"alt": "Para młoda, pan młody całuje pannę młodą."
+				}
+			},
+			{
+				"title": "Sesje produktowe",
+				"description": {
+					"src": "/img/offerImages/7-o-i.webp",
+					"alt": "Modelka fitness z hantlą — sesja produktowa odzieży sportowej"
+				}
 			}
 		]
 	},

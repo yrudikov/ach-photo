@@ -9,11 +9,14 @@
 	--color-text-white: #ffffff;
 	--color-textSecondary: #8a8077;
 	--color-background: #fff;
-	--background-about: #eae6e3;
+	//--background-about: #eae6e3;
+	--background-light-brown: #eae6e3;
 	--color-backgroundSecondary: #8a8077;
-	--color-backgroundSecondaryHower: #3d3731;
+	--background-medium-brown: #8a8077;
+	//--color-backgroundSecondaryHower: #3d3731;
+	--background-dark-brown: #3d3731;
 
-	--border-radius-primary: 4px;
+	--border-radius-primary: 2px;
 
 
 	--font-title: 'Bebas Neue', sans-serif;
@@ -40,6 +43,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 }
 
 .text-nav-about-ul {
@@ -64,10 +68,10 @@ body {
 }
 
 .container {
-	max-width: 400px;
+	max-width: 767px;
 	margin: auto;
 	//margin: 80px auto 0 auto;
-	padding: 0 1rem;
+	//padding: 0 1rem;
 }
 
 .section-title {
