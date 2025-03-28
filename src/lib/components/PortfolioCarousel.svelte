@@ -2,7 +2,7 @@
 	import Carousel from 'svelte-carousel';
 	import content from '$lib/content.json';
 	import { browser } from '$app/environment';
-
+	import {screen} from '$lib/store/useScreen.js';
 	let carousel;
 
 	function goToPrev() {
@@ -19,10 +19,10 @@
 		<Carousel
 			bind:this={carousel}
 			navigation={false}
-			itemsToShow={1}
-			itemsToScroll={1}
+			particlesToShow={$screen.isDesktop ? 3 : 1}
+			particlesToScroll={1}
 			loop
-			particlePadding={10}
+			partialPadding={10}
 		>
 			{#each content.portfolio.images as image}
 				<div class="carousel-slide">
@@ -31,29 +31,44 @@
 			{/each}
 		</Carousel>
 
-		<button class="nav-button prev-button" on:click={goToPrev} aria-label="Previous slide">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path
-					fill="none"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M15 18l-6-6 6-6"
-				/>
+<!--		<button class="nav-button prev-button" on:click={goToPrev} aria-label="Previous slide">-->
+<!--			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">-->
+<!--				<path-->
+<!--					fill="none"-->
+<!--					stroke="currentColor"-->
+<!--					stroke-linecap="round"-->
+<!--					stroke-linejoin="round"-->
+<!--					stroke-width="2"-->
+<!--					d="M15 18l-6-6 6-6"-->
+<!--				/>-->
+<!--			</svg>-->
+<!--		</button>-->
+
+<!--		<button class="nav-button next-button" on:click={goToNext} aria-label="Next slide">-->
+<!--			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">-->
+<!--				<path-->
+<!--					fill="none"-->
+<!--					stroke="currentColor"-->
+<!--					stroke-linecap="round"-->
+<!--					stroke-linejoin="round"-->
+<!--					stroke-width="2"-->
+<!--					d="M9 18l6-6-6-6"-->
+<!--				/>-->
+<!--			</svg>-->
+<!--		</button>-->
+
+		<button class="nav-button prev-button" on:click={goToPrev} aria-label="Poprzedni slajd">
+
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" class="nav-icon">
+				<path fill="var(--background-dark-brown)" d="M9.857 15.962a.5.5 0 0 0 .243.68l9.402 4.193c1.496.667 3.047-.814 2.306-2.202l-3.152-5.904c-.245-.459-.245-1 0-1.458l3.152-5.904c.741-1.388-.81-2.87-2.306-2.202l-3.524 1.572a2 2 0 0 0-.975.932z"/>
+				<path fill="var(--background-dark-brown)" d="M8.466 15.39a.5.5 0 0 1-.65.233l-4.823-2.15c-1.324-.59-1.324-2.355 0-2.945L11.89 6.56a.5.5 0 0 1 .651.68z" opacity="1" />
 			</svg>
 		</button>
 
-		<button class="nav-button next-button" on:click={goToNext} aria-label="Next slide">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path
-					fill="none"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M9 18l6-6-6-6"
-				/>
+		<button class="nav-button next-button" on:click={goToNext} aria-label="Następny slajd">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="nav-icon">
+				<path fill="var(--background-dark-brown)" d="M14.143 15.962a.5.5 0 0 1-.244.68l-9.402 4.193c-1.495.667-3.047-.814-2.306-2.202l3.152-5.904c.245-.459.245-1 0-1.458L2.191 5.367c-.74-1.388.81-2.87 2.306-2.202l3.525 1.572a2 2 0 0 1 .974.932z"/>
+				<path fill="var(--background-dark-brown)" d="M15.533 15.39a.5.5 0 0 0 .651.233l4.823-2.15c1.323-.59 1.323-2.355 0-2.945L12.109 6.56a.5.5 0 0 0-.651.68z" opacity="1"/>
 			</svg>
 		</button>
 	{:else}
@@ -78,10 +93,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 0 2px;
-	}
-	:global(.sc-carousel__pages-container) {
-		margin: 0 -2px;
+		padding: 0 10px;
 	}
 
 	.fallback-container {
@@ -92,7 +104,7 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
-		border-radius: 10px;
+		border-radius: var(--border-radius-primary);
 	}
 
 	.nav-button {
@@ -102,22 +114,19 @@
 		transform: translateY(-50%);
 		width: 30px;
 		height: 30px;
-		border-radius: 50%;
-		background-color: var(--color-backgroundSecondary, rgba(255, 255, 255, 0.8));
+		background-color: transparent;
 		border: none;
 		cursor: pointer;
 		align-items: center;
 		justify-content: center;
 		z-index: 10;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 0 2px var(--background-light-brown));
 		transition:
-			background-color 0.3s,
 			transform 0.2s;
 	}
 
 	.nav-button:hover {
-		background-color: var(--background-dark-brown, rgba(255, 255, 255, 1));
-		transform: translateY(-50%) scale(1.1);
+		transform: translateY(-50%) scale(1.3);
 	}
 
 	:global(.sc-carousel__arrow-container) {
@@ -126,14 +135,20 @@
 
 	@include media(tablet) {
 		.carousel-container {
-			width: 66.67%;
+      width: 100%;
 			margin: 30px auto 0;
 		}
 
+    .carousel-slide {
+      width: 100%;
+      flex: 1 0 auto;
+      padding: 0 4px;
+    }
+
 		.nav-button {
 			display: flex;
-			width: 30px;
-			height: 30px;
+      width: 36px;
+      height: 36px;
 		}
 
 		.prev-button {

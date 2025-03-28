@@ -1,20 +1,18 @@
 <script>
 	import content from "$lib/content.json";
 	import PortfolioCarousel from "./PortfolioCarousel.svelte";
-	import Divider from '$lib/components/Divider.svelte';
+	import SectionTitle from '$lib/components/SectionTitle.svelte';
+
+	let sectionTitleProps = {
+		title: content.header.nav[2].name,
+		color: 'var(--background-light-brown)',
+		backgroundColor: 'var(--background-medium-brown)'
+	};
 </script>
 
 <section class="portfolio-section text-monserrat ">
-	<Divider />
+	<SectionTitle {sectionTitleProps} />
 	<div class="portfolio-content-wrapper">
-		<article class="portfolio-text-container">
-			<h2 class="portfolio-subtitle"> {content.portfolio.title}</h2>
-
-			{#each content.portfolio.content as item}
-				<hr class="portfolio-divider" />
-				<p class="portfolio-text-content">{item.text}</p>
-			{/each}
-		</article>
 		<PortfolioCarousel />
 	</div>
 
@@ -24,10 +22,11 @@
   @use '$lib/styles/_mixins' as *;
 
 	.portfolio-section {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		margin-top: 40px;
+		padding: 50px 0 50px;
 	}
 	.portfolio-content-wrapper {
     display: flex;
@@ -62,6 +61,8 @@
 
 
 	@include media(tablet) {
+
+
     .portfolio-content-wrapper {
       display: flex;
       flex-direction: row;

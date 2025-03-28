@@ -22,7 +22,7 @@
 	};
 
 	let sectionTitleProps = {
-		title: content.header.nav[2].name,
+		title: 'W ofercie',
 		color: 'var(--color-text)',
 		backgroundColor: 'var(--background-light-brown)'
 	};
@@ -149,7 +149,7 @@
 
   @include media(tablet) {
     .offer-section {
-      padding: 50px 0;
+      padding: 100px 0 50px;
 
     }
 

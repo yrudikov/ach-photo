@@ -98,48 +98,44 @@
 		]
 	},
 	"portfolio": {
-		"title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
+		"title": "",
 		"content": [
 			{
-				"text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów."
+				"text": ""
 			},
 			{
-				"text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji."
+				"text": ""
 			},
-			{ "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
+			{ "text": "" }
 		],
 		"images": [
 			{
-				"src": "/img/carousel/diet-a-1.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+ z hasłem 'Dieta dla każdego'. Zdrowe odżywianie bez tajemnic, regulacja masy ciała, koniec z niedoborami, poprawa zdrowia i zdrowa relacja z jedzeniem."
+				"src": "/img/carousel/1-o-c.webp",
+				"alt": "Sesja plenerowa psów – pakiety MINI i MEDIUM od 400 zł"
 			},
 			{
-				"src": "/img/carousel/diet-a-2.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+."
+				"src": "/img/carousel/2-o-c.webp",
+				"alt": "Sesja miotu szczeniąt – pakiety MINI i MEDIUM od 500 zł"
 			},
 			{
-				"src": "/img/carousel/diet-a-3.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+."
+				"src": "/img/carousel/3-o-c.webp",
+				"alt": "Sesja fotograficzna podczas wystawy – pakiet 3 ujęć za 150 zł"
 			},
 			{
-				"src": "/img/carousel/a-ch-1.webp",
-				"alt": "Zrzut ekranu strony Anny Cheby, specjalistki w dziedzinie fotografii kynologicznej, felinologicznej, biznesowej, portretowej, produktowej, okolicznościowej i ślubnej. Opis pasji do fotografii, uchwycenia emocji i zatrzymania ulotnych chwil w wyjątkowych kadrach."
+				"src": "/img/carousel/4-o-c.webp",
+				"alt": "Sesja plenerowa portretowa – pakiety STANDARD i MAX od 400 zł"
 			},
 			{
-				"src": "/img/carousel/a-ch-2.webp",
-				"alt": "Zrzut ekranu strony Anny Cheby."
+				"src": "/img/carousel/5-o-c.webp",
+				"alt": "Sesja okolicznościowa – pakiety STANDARD i MAX od 600 zł"
 			},
 			{
-				"src": "/img/carousel/e2t-1.webp",
-				"alt": "Zrzut ekranu strony Email2TMS – aplikacji wspierającej cyfryzację transportu. Interfejs użytkownika dostosowany do zarządzania transportem i usprawniania pracy spedytorów."
+				"src": "/img/carousel/6-o-c.webp",
+				"alt": "Sesja ślubno-weselna – pakiety od MINI do MAX PLUS od 1200 zł"
 			},
 			{
-				"src": "/img/carousel/e2t-2.webp",
-				"alt": "Zrzut ekranu strony Email2TMS."
-			},
-			{
-				"src": "/img/carousel/e2t-3.webp",
-				"alt": "Zrzut ekranu strony Email2TMS."
+				"src": "/img/carousel/7-o-c.webp",
+				"alt": "Sesja produktowa – od 500 zł, cena ustalana indywidualnie"
 			}
 		]
 	},
