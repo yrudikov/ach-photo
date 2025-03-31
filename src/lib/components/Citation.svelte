@@ -1,15 +1,13 @@
 <script>
 	import content from '$lib/content.json';
-	import Divider from './Divider.svelte';
 </script>
 
 <section class="citation-section">
-	<Divider />
 	<article class="citation-article">
 		<div class="citation-image-wrapper">
 			<img src={content.citation.img.src} alt={content.citation.img.alt} class="citation-image" />
 		</div>
-		<p class="citation-content">{content.citation.content}</p>
+		<p class="citation-content">{@html content.citation.content}</p>
 	</article>
 </section>
 
@@ -17,7 +15,8 @@
 	@use '$lib/styles/_mixins' as *;
 
 	.citation-section {
-		margin: 60px 0;
+		background-color: var(--background-medium-brown);
+		padding: 40px 0;
 	}
 
 	.citation-article {
@@ -26,7 +25,6 @@
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
-		margin: 40px 0 0 0;
 	}
 
 	.citation-image-wrapper {
@@ -41,27 +39,33 @@
 
 	.citation-content {
 		text-align: center;
-		font-family: var(--font-darker-grotesque), sans-serif;
-		font-size: var(--font-size-xl);
-		font-weight: 200;
+		font-family: var(--font-body);
+		font-size: 28px;
+		color: var(--color-text-white);
+		font-weight: 300;
 		letter-spacing: 2px;
 	}
 
 	@include media(tablet) {
+		.citation-section {
+			padding: 80px 40px;
+		}
 		.citation-article {
 			flex-direction: row;
-			gap: 30px;
-			margin: 80px 0 80px 0;
+			gap: 60px;
 		}
 
 		.citation-image-wrapper {
 			flex-shrink: 0;
-			max-width: 350px;
+			max-width: 500px;
+			width: 100%;
 		}
 
 		.citation-content {
-			font-size: var(--font-size-xxxl);
-			padding: 0 20px 0 0;
+			font-size: 64px;
+			text-align: left;
+      letter-spacing: 4px;
+			line-height: 1.2;
 		}
 	}
 </style>

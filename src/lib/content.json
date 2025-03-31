@@ -176,25 +176,10 @@
 	},
 	"citation": {
 		"img": {
-			"src": "/img/citation-image-blur.webp",
-			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+			"src": "/img/citation-image.webp",
+			"alt": "Portret Anny Cheby, fotografki z pasją."
 		},
-		"content": "„Skuteczna optymalizacja to klucz do wzrostu. Pomogę Ci osiągnąć lepsze wyniki poprzez strategię, automatyzację i nowoczesne podejście do zarządzania.”"
-	},
-	"focus": {
-		"title": "focus",
-		"items": [
-			{ "name": "SZTUCZNA INTELIGENCJA", "src": "/img/f-s-1.svg" },
-			{ "name": "OPTYMALIZACJA", "src": "/img/f-s-2.svg" },
-			{ "name": "STRATEGIA ROZWOJU I WZROSTU", "src": "/img/f-s-3.svg" },
-			{ "name": "WSPÓŁPRACA", "src": "/img/f-s-4.svg" },
-			{ "name": "TECHNOLOGIA INFORMATYCZNA", "src": "/img/f-s-5.svg" },
-			{ "name": "TARGETOWANIE", "src": "/img/f-s-6.svg" }
-		],
-		"image": {
-			"src": "/img/f-s-7.svg",
-			"alt": "WIZJA I INNOWACJA"
-		}
+		"content": "“Każde zdjęcie  to chwila, która trwa wiecznie”"
 	},
 	"contact": {
 		"title": "Kontakt",

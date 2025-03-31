@@ -6,7 +6,6 @@
 	import About from '$lib/components/About.svelte';
 	import Citation from '$lib/components/Citation.svelte';
 	import Portfolio from '$lib/components/Portfolio.svelte';
-	import Focus from '$lib/components/Focus.svelte';
 	import Offer from '$lib/components/Offer.svelte';
 	import OfferSecondPart from '$lib/components/OfferSecondPart.svelte';
 	import Contact from '$lib/components/Contact.svelte';
@@ -27,7 +26,6 @@
 	<OfferSecondPart />
 	<Portfolio />
 	<Citation />
-	<Focus />
 	<Contact />
 </main>
 <OfferInfo />
