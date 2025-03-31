@@ -12,7 +12,7 @@
 	@use '$lib/styles/_mixins' as *;
 
 	.offer-info {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 
 	.offer-info-title {
@@ -24,7 +24,7 @@
 
 	@include media(tablet) {
 		.offer-info-title {
-			font-size: var(--font-size-xl);
+			font-size: var(--font-size-lg);
 			letter-spacing: 2px;
 		}
 	}

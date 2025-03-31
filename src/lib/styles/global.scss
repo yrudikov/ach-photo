@@ -64,14 +64,15 @@ body {
 	font-size: var(--font-size-base);
 	color: var(--color-text);
 	background-color: var(--color-background);
-	//line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
 	max-width: 767px;
 	margin: auto;
-	//margin: 80px auto 0 auto;
-	//padding: 0 1rem;
 }
 
 .section-title {

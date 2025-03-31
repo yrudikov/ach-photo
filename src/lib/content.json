@@ -182,25 +182,32 @@
 		"content": "“Każde zdjęcie  to chwila, która trwa wiecznie”"
 	},
 	"contact": {
-		"title": "Kontakt",
-		"logo": "/img/logo-consulting.png",
-		"background": "/img/contact-image.webp",
+		"title": "ACH FOTOGRAFIA",
+		"logo": "/img/logo-footer.webp",
+		"background": "/img/logo-footer.webp",
+		"subtitles": [
+			"Fotografia kynologiczna",
+			"Fotografia Felinologiczna",
+			"fotografia biznesowa",
+			"fotografia portretowa",
+			"fotografia produktowa",
+			"fotografia okolicznościowa",
+			"fotografia ślubna"
+		],
 		"content": [
-			{ "icon": "", "text": "Śląsk, Polska" },
-			{ "icon": "", "text": "+48 884 885 165" },
-			{ "icon": "", "text": "ryszka.artur.b2b@gmail.com" },
-			{ "icon": "", "text": "www.business-consulting.top" }
+			{ "icon": "ic:baseline-phone", "text": "+48 884 885 165", "url": "tel:+48884885165", "title": "Telefon - Anna Cheba"},
+			{ "icon": "material-symbols-light:arrow-selector-tool", "text": "www.ach-fotografia.com", "url": "https://ach-fotografia.com/", "title": "Strona - ACH Fotografia" },
+			{ "icon": "material-symbols-light:mail-sharp", "text": "annacheba.fotografia@gmail.com", "url": "mailto:annacheba.fotografia@gmail.com", "title": "Mail do ACH Fotografia"},
+			{ "icon": "bxs:map", "text": "Zabrze, Polska", "url": "https://maps.app.goo.gl/J1wZJZXvUHi6zo5o7", "title": "Adres ACH Fotografia"},
+			{ "icon": "basil:facebook-messenger-solid", "text": "achpetsphotography", "url": "https://www.facebook.com/achpetsphotography", "title": "Facebook - ACH Fotografia"},
+			{ "icon": "raphael:instagram", "text": "annacheba_fotografia", "url": "https://www.instagram.com/annacheba_fotografia", "title": "Instagram - ACH Fotografia"}
 		]
 	},
 	"footer": {
-		"copyright": "© 2024 AR Consulting. Wszelkie prawa zastrzeżone.",
-		"socials": [
-			{ "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
-			{ "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
-			{ "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
-		]
+		"copyright": "© 2025 ACH Fotografia. Wszelkie prawa zastrzeżone."
+
 	},
 	"offerInfo": {
-		"description": "Ta strona stanowi wizualizację \"wariantu 1\" do umowy o utworzenie strony www."
+		"description": "Strona Stworzona przez 4.0 Consulting - “Wariant 1” www.business-consulting.top"
 	}
 }
