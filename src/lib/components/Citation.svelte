@@ -47,25 +47,49 @@
 	}
 
 	@include media(tablet) {
-		.citation-section {
-			padding: 80px 40px;
+    .citation-section {
+			padding: 60px 0;
 		}
 		.citation-article {
+			max-width: 768px;
+			margin: 0 auto;
 			flex-direction: row;
 			gap: 60px;
+			justify-content: flex-start;
 		}
 
 		.citation-image-wrapper {
 			flex-shrink: 0;
-			max-width: 500px;
+			max-width: 350px;
 			width: 100%;
 		}
 
 		.citation-content {
-			font-size: 64px;
+			font-size: var(--font-size-xxl);
 			text-align: left;
       letter-spacing: 4px;
 			line-height: 1.2;
+			max-width: 450px;
 		}
+	}
+
+	@include media(desktop) {
+
+    .citation-article {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .citation-image-wrapper {
+      flex-shrink: 0;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    .citation-content {
+      font-size: 54px;
+      text-align: left;
+      letter-spacing: 4px;
+      line-height: 1.2;
+    }
 	}
 </style>
