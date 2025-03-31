@@ -1,7 +1,6 @@
 <script>
 	export let sectionTitleProps;
 
-	console.log(sectionTitleProps);
 </script>
 
 <div class="SectionTitle"

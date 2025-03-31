@@ -129,6 +129,7 @@
 		padding: 0;
 		background: var(--color-backgroundSecondary);
 		text-align: center;
+		letter-spacing: 4px;
 	}
 
 	.nav {

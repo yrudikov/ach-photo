@@ -106,7 +106,7 @@
     padding: 10px;
     background: var(--background-light-brown);
     color: var(--color-text);
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-medium);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -149,7 +149,7 @@
 
   @include media(tablet) {
     .offer-section {
-      padding: 100px 0 50px;
+      padding: 80px 0 40px;
 
     }
 

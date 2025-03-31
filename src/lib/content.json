@@ -23,7 +23,7 @@
 		"heroImageAlt": "Anna Cheba z psem w zielonym plenerze – chwila bliskości i spokoju w otoczeniu natury\n"
 	},
 	"about": {
-		"title": "Anna Cheba",
+		"title": "O mnie",
 		"aboutList": [
 			{
 				"content": "Nazywam się <b>Anna Cheba</b> i fotografia to moja największa pasja. \nJest to sposób na zatrzymanie ulotnych chwil i opowiadanie historii <b>obrazem</b>."
@@ -44,7 +44,7 @@
 		}
 	},
 	"offer": {
-		"title": "OFERUJEMY",
+		"title": "W ofercie",
 		"items": [
 			{
 				"title": "Sesje plenerowe psów",
@@ -97,15 +97,9 @@
 			}
 		]
 	},
-	"portfolio": {
-		"title": "",
+	"offerCarousel": {
+		"title": "Oferta",
 		"content": [
-			{
-				"text": ""
-			},
-			{
-				"text": ""
-			},
 			{ "text": "" }
 		],
 		"images": [
@@ -139,57 +133,43 @@
 			}
 		]
 	},
-	"experience": {
-		"title": "doświadczenie",
+	"portfolio": {
+		"title": "Portfolio",
 		"content": [
 			{
-				"title": "Zarządzanie i rozwój biznesu",
+				"title": "FOTOGRAFIA ZWIERZĄT",
 				"description": [
-					{ "text": "Ponad 10 lat doświadczenia w prowadzeniu i\nskalowaniu wyników firm" },
-					{ "text": "Tworzenie strategii rozwoju dla małych i średnich przedsiębiorstw" },
-					{ "text": "Budowanie struktur organizacyjnych i zespołów sprzedażowych" }
+					{ "text": "bo miłość zwierząt jest bezwarunkowa. Staram się uchwycić piękno, emocje zawarte w waszej więzi oraz uczucia, które Wam towarzyszą." }
 				]
 			},
 			{
-				"title": " IT, AI i automatyzacja",
+				"title": "FOTOGRAFII BIZNESOWEJ",
 				"description": [
-					{ "text": "Wdrażanie nowoczesnych rozwiązań AI i automatyzacji procesów" },
-					{ "text": "Rozwój oprogramowania dla branży logistycznej i biznesowej" },
-					{ "text": "Optymalizacja działań firm poprzez dobór odpowiednich narzędzi IT" }
+					{ "text": "bo profesjonalny wizerunek to klucz do sukcesu, a ja pomagam Ci pokazać siebie w najlepszym świetle." }
 				]
 			},
 			{
-				"title": "Logistyka i transport",
+				"title": "FOTOGRAFIA PRODUKTOWA",
 				"description": [
-					{ "text": "Doświadczenie w zarządzaniu procesami logistycznymi" },
-					{ "text": "Tworzenie innowacyjnych systemów do monitorowania i analizy transportu" },
-					{ "text": "Optymalizacja kosztów i procesów w branży TSL" }
+					{ "text": "bo każdy produkt ma swoją historię. Tworzę zdjęcia, które podkreślają jego wyjątkowość i przyciągają uwagę klientów." }
 				]
 			},
 			{
-				"title": "Sprzedaż i strategia cenowa",
+				"title": "FOTOGRAFIA PORTRETOWA",
 				"description": [
-					{ "text": "Skalowanie działów sprzedaży i budowanie skutecznych strategii pricingowych" },
-					{ "text": "Wdrażanie systemów CRM i automatyzacji działań handlowych" },
-					{ "text": "Negocjacje B2B i optymalizacja konwersji w sprzedaży" }
+					{ "text": "bo nie potrzebujesz powodu, aby uwiecznić swoje piękno." }
 				]
 			},
 			{
-				"title": "Consulting i optymalizacja kosztów",
+				"title": "FOTOGRAFIA OKOLICZNOŚCIOWA",
 				"description": [
-					{ "text": "Doradztwo dla firm w zakresie strategii wzrostu i efektywności operacyjnej" },
-					{ "text": "Redukcja kosztów poprzez nowoczesne modele zarządzania i analizy danych" },
-					{ "text": "Współpraca z firmami w celu zwiększenia rentowności i skalowalności" }
+					{ "text": "bo życie składa się z chwil, które warto zachować na zawsze. Tworzę kadry pełne emocji i autentyczności, byś mógł wracać do nich przez lata." }
 				]
 			},
 			{
-				"title": "Tworzenie stron WWW i budowanie marki online",
+				"title": "FOTOGRAFIA ŚLUBNA",
 				"description": [
-					{ "text": "Prowadzenie zespołu developerów w realizacji profesjonalnych stron WWW" },
-					{ "text": "Tworzenie nowoczesnych i zoptymalizowanych pod SEO stron dla firm" },
-					{
-						"text": "Integracja systemów i narzędzi marketingowych dla skutecznej obecności online"
-					}
+					{ "text": "bo każdy ślub to wyjątkowa historia pełna miłości, wzruszeń i szczęścia." }
 				]
 			}
 		]
