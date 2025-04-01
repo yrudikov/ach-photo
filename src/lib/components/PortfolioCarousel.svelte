@@ -1,18 +1,29 @@
 <script>
 	import '@slidy/svelte/dist/slidy.css';
-	import { Slidy, classNames } from "@slidy/svelte";
+	import { Slidy, classNames } from '@slidy/svelte';
 	import { stairs } from '@slidy/animation';
 	import { onMount, onDestroy } from 'svelte';
+	import content from '$lib/content.json';
 
-	export let images = [];
+	const pathToImages = '/img/portfolioCarousel/';
+	const imagesCount = 20;
 
-	const slides = images.map((image, idx) => ({
-		id: idx,
-		src: image.description.src,
-		width: 500,
-		height: 400,
-		alt: image.description.alt
-	}));
+
+	const createSlides = () => {
+		const images = [];
+		for (let i = 1; i <= imagesCount; i++) {
+			images.push({
+				id: i,
+				src: `${pathToImages}${i}.webp`,
+				width: 500,
+				height: 400,
+				alt: content.portfolio.portfolioCarousel
+			});
+		}
+		return images;
+	};
+
+	const slides = createSlides();
 
 	let currentIndex = 0;
 
@@ -81,16 +92,15 @@
 <style>
     .carousel-wrapper {
         width: 100%;
-				padding-top: 40px;
+        padding-top: 40px;
         overflow: hidden;
         touch-action: pan-y;
     }
 
-		:global(.slidy-counter) {
-				display: none;
-		}
+    :global(.slidy-counter) {
+        display: none;
+    }
+
 
 
 </style>
-
-

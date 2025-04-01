@@ -31,7 +31,7 @@
 			</div>
 		{/each}
 	</article>
-	<PortfolioCarousel images={content.offer.items}/>
+	<PortfolioCarousel />
 </section>
 
 <style lang="scss">

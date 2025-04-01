@@ -12,6 +12,8 @@
 	function goToNext() {
 		if (carousel) carousel.goToNext();
 	}
+
+
 </script>
 
 <div class="carousel-container">
@@ -20,7 +22,7 @@
 			bind:this={carousel}
 			navigation={false}
 
-			particlesToShow={$screen.isDesktop ? 3 : 1}
+			particlesToShow={$screen.isDesktop || $screen.isTablet ? 3 : 1}
 			particlesToScroll={1}
 			loop
 			partialPadding={10}
