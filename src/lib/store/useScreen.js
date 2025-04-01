@@ -1,5 +1,5 @@
-
 import { writable } from 'svelte/store';
+
 
 
 function createScreenStore() {
@@ -13,7 +13,7 @@ function createScreenStore() {
 		const width = window.innerWidth;
 		set({
 			width,
-			isTablet: width >= 768,
+			isTablet: width >= 767,
 			isDesktop: width >= 1024
 		});
 	}

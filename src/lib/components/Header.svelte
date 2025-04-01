@@ -7,7 +7,7 @@
 	let isMobile = $state(false);
 
 	const checkScreenSize = () => {
-		isMobile = window.innerWidth <= 768;
+		isMobile = window.innerWidth <= 767;
 	};
 
 	onMount(() => {
@@ -129,6 +129,7 @@
 		padding: 0;
 		background: var(--color-backgroundSecondary);
 		text-align: center;
+		letter-spacing: 4px;
 	}
 
 	.nav {
@@ -144,6 +145,7 @@
       background-color: transparent;
       z-index: 1000;
 			padding: 0;
+
     }
 
 		.nav {
@@ -155,6 +157,7 @@
 			background-color: var(--color-backgroundSecondary);
 			padding: 0 8rem 0 3rem;
 			border-radius: 1px;
+      box-shadow: 0 0 10px var(--color-secondary);
 		}
 
 		.nav-link {

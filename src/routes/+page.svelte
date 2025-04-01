@@ -5,13 +5,13 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import About from '$lib/components/About.svelte';
 	import Citation from '$lib/components/Citation.svelte';
-	import Experience from '$lib/components/Experience.svelte';
-	import Focus from '$lib/components/Focus.svelte';
-	import Offer from '$lib/components/Offer.svelte';
 	import Portfolio from '$lib/components/Portfolio.svelte';
+	import Offer from '$lib/components/Offer.svelte';
+	import OfferSecondPart from '$lib/components/OfferSecondPart.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import OfferInfo from '$lib/components/OfferInfo.svelte';
 	import SEO from '$lib/components/SEO.svelte';
+	import Socials from '$lib/components/Socials.svelte';
 
 	onDestroy(() => {
 		screen.cleanup();
@@ -21,13 +21,13 @@
 <SEO />
 <Header />
 <main class="container">
+	<Socials/>
 	<Hero />
 	<About />
 	<Offer />
+	<OfferSecondPart />
 	<Portfolio />
-	<Experience />
 	<Citation />
-	<Focus />
 	<Contact />
 </main>
 <OfferInfo />

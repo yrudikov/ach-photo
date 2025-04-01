@@ -1,147 +1,106 @@
 <script>
-	import Carousel from 'svelte-carousel';
+	import '@slidy/svelte/dist/slidy.css';
+	import { Slidy, classNames } from '@slidy/svelte';
+	import { stairs } from '@slidy/animation';
+	import { onMount, onDestroy } from 'svelte';
 	import content from '$lib/content.json';
-	import { browser } from '$app/environment';
 
-	let carousel;
+	const pathToImages = '/img/portfolioCarousel/';
+	const imagesCount = 20;
 
-	function goToPrev() {
-		if (carousel) carousel.goToPrev();
+
+	const createSlides = () => {
+		const images = [];
+		for (let i = 1; i <= imagesCount; i++) {
+			images.push({
+				id: i,
+				src: `${pathToImages}${i}.webp`,
+				width: 500,
+				height: 400,
+				alt: content.portfolio.portfolioCarousel
+			});
+		}
+		return images;
+	};
+
+	const slides = createSlides();
+
+	let currentIndex = 0;
+
+	const autoplayDuration = 3000;
+	const userInteractionPause = 3000;
+
+	let autoplayInterval;
+	let interactionTimeout;
+
+	function startAutoplay() {
+		clearInterval(autoplayInterval);
+		autoplayInterval = setInterval(() => {
+			currentIndex = (currentIndex + 1) % slides.length;
+		}, autoplayDuration);
 	}
 
-	function goToNext() {
-		if (carousel) carousel.goToNext();
+	function stopAutoplayTemporarily() {
+		clearInterval(autoplayInterval);
+		clearTimeout(interactionTimeout);
+
+		interactionTimeout = setTimeout(() => {
+			startAutoplay();
+		}, userInteractionPause);
+	}
+
+	onMount(() => {
+		startAutoplay();
+	});
+
+	onDestroy(() => {
+		clearInterval(autoplayInterval);
+		clearTimeout(interactionTimeout);
+	});
+
+
+	function handleInteraction() {
+		stopAutoplayTemporarily();
 	}
 </script>
 
-<div class="carousel-container">
-	{#if browser}
-		<Carousel
-			bind:this={carousel}
-			navigation={false}
-			itemsToShow={1}
-			itemsToScroll={1}
-			loop
-			particlePadding={10}
-		>
-			{#each content.portfolio.images as image}
-				<div class="carousel-slide">
-					<img src={image.src} alt={image.alt} class="carousel-image" />
-				</div>
-			{/each}
-		</Carousel>
-
-		<button class="nav-button prev-button" on:click={goToPrev} aria-label="Previous slide">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path
-					fill="none"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M15 18l-6-6 6-6"
-				/>
-			</svg>
-		</button>
-
-		<button class="nav-button next-button" on:click={goToNext} aria-label="Next slide">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-				<path
-					fill="none"
-					stroke="currentColor"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M9 18l6-6-6-6"
-				/>
-			</svg>
-		</button>
-	{:else}
-		<div class="fallback-container">
-			{#each [content.portfolio.images[0]] as image}
-				<img src={image.src} alt={image.alt} class="carousel-image" />
-			{/each}
-		</div>
-	{/if}
+<div id="portfolioCarousel" class="carousel-wrapper"
+		 on:pointerdown={handleInteraction}
+		 on:wheel={handleInteraction}
+		 on:touchstart={handleInteraction}>
+	<Slidy
+		{slides}
+		bind:index={currentIndex}
+		animation={stairs}
+		loop={true}
+		duration={300}
+		clamp={0}
+		navigation={false}
+		arrows={false}
+		progress={false}
+		classNames={{
+      root: `${classNames.root} custom-slidy`,
+      slide: `${classNames.slide} custom-slide`,
+      counter: `slidy-counter`,
+      ...classNames
+    }}
+		--slidy-slide-height="350px"
+		--slidy-slide-radius="2px"
+	/>
 </div>
 
-<style lang="scss">
-	@use '$lib/styles/_mixins' as *;
+<style>
+    .carousel-wrapper {
+        width: 100%;
+        padding-top: 40px;
+        overflow: hidden;
+        touch-action: pan-y;
+    }
 
-	.carousel-container {
-		width: 100%;
-		margin: 30px auto;
-		position: relative;
-	}
+    :global(.slidy-counter) {
+        display: none;
+    }
 
-	.carousel-slide {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 2px;
-	}
-	:global(.sc-carousel__pages-container) {
-		margin: 0 -2px;
-	}
 
-	.fallback-container {
-		width: 100%;
-	}
 
-	.carousel-image {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		border-radius: 10px;
-	}
-
-	.nav-button {
-		display: none;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		background-color: var(--color-backgroundSecondary, rgba(255, 255, 255, 0.8));
-		border: none;
-		cursor: pointer;
-		align-items: center;
-		justify-content: center;
-		z-index: 10;
-		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-		transition:
-			background-color 0.3s,
-			transform 0.2s;
-	}
-
-	.nav-button:hover {
-		background-color: var(--color-backgroundSecondaryHower, rgba(255, 255, 255, 1));
-		transform: translateY(-50%) scale(1.1);
-	}
-
-	:global(.sc-carousel__arrow-container) {
-		display: none !important;
-	}
-
-	@include media(tablet) {
-		.carousel-container {
-			width: 66.67%;
-			margin: 30px auto 0;
-		}
-
-		.nav-button {
-			display: flex;
-			width: 30px;
-			height: 30px;
-		}
-
-		.prev-button {
-			left: 15px;
-		}
-
-		.next-button {
-			right: 20px;
-		}
-	}
 </style>

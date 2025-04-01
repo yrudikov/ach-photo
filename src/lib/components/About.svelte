@@ -1,61 +1,84 @@
 <script>
 	import content from '$lib/content.json';
-	import Icon from '@iconify/svelte';
+	import SectionTitle from '$lib/components/SectionTitle.svelte';
+	import { screen } from '$lib/store/useScreen.js';
+
+	let sectionTitleProps = {
+		title: content.header.nav[1].name,
+		color: 'var(--color-text-white)',
+		backgroundColor: 'var(--color-backgroundSecondary)'
+	};
 </script>
 
 <section id="about" class="about-section">
+	<SectionTitle {sectionTitleProps} />
 	<article class="about-article">
-		<h2 class="about-title text-serif-display">{content.about.title}</h2>
+		<h1 class="about-title ">{content.about.title}</h1>
 		<ul class="about-list">
 			{#each content.about.aboutList as item}
-				<li class="about-list-item text-bebas">
-					<Icon icon="mdi:label" class="list-icon" />
-					<span>{item.content}</span>
+				<li class="about-list-item text-nunito">
+					<span>{@html item.content}</span>
 				</li>
 			{/each}
 		</ul>
 	</article>
+	{#if $screen.isDesktop || $screen.isTablet}
 	<figure class="about-image-wrapper">
 		<img class="about-image" src={content.about.image.src} alt={content.about.image.alt} />
 	</figure>
+		{/if}
 </section>
 
 <style lang="scss">
 	@use '$lib/styles/_mixins' as *;
 
 	.about-section {
+    background: url('/img/about-img.webp') center/cover no-repeat;
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
+		justify-content: flex-end;
 		gap: 1rem;
+		width: 100%;
+		aspect-ratio: 1/1.5;
+		padding: 1rem;
+		position: relative;
+	}
+
+  .about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+	.about-article {
+    filter: drop-shadow(0 0 2px var(--color-secondary));
+    z-index: 2;
 	}
 
 	.about-title {
 		font-size: 2rem;
-		color: white;
-		font-weight: 300;
+		color: var(--color-text-white);
+		font-family: var(--font-subtitle);
+		font-weight: 500;
+		letter-spacing: 2px;
 	}
 
 	.about-list-item {
 		font-weight: 300;
 		text-align: left;
 		margin: 10px 0 0 0;
+		color: var(--color-text-white);
 
 		span {
-			font-size: var(--font-size-small);
+			font-size: 15px;
 		}
 	}
 
 	.about-list-item {
 		display: flex;
-		text-transform: uppercase;
-		gap: 0.5rem;
-	}
-
-	.about-list-item :global(svg) {
-		font-size: 1rem;
-		flex-shrink: 0;
-		margin-top: 3px;
-		color: var(--color-text);
 	}
 
 	.about-image-wrapper {
@@ -67,39 +90,54 @@
 	.about-image {
 		display: block;
 		width: 100%;
-		object-fit: cover;
-		object-position: top;
+		object-fit: contain;
 	}
 
-	.about-image-wrapper::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		box-shadow: inset 0 0 10px 10px rgba(19, 18, 19, 100%);
-		pointer-events: none;
-	}
 
 	@include media(tablet) {
 		.about-section {
-			padding: 0 30px 0 30px;
+      background: transparent;
+			padding: 90px 50px 70px 70px;
 			flex-direction: row;
+			justify-content: space-between;
+      aspect-ratio: auto;
 		}
 
-		.about-title {
+    .about-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: var(--background-light-brown);
+      z-index: -1;
+    }
+
+    .about-article {
+			max-width: 500px;
+      filter: none;
+    }
+
+    .about-title {
+			font-weight: 600;
+      color: var(--color-text);
 			font-size: 40px;
 		}
 
 		.about-list-item {
+			margin-top: 30px;
+			color: var(--color-text);
+			text-align: justify;
+			white-space: pre-wrap;
 			span {
-				font-size: var(--font-size-base);
+				font-size: var(--font-size-lg);
 			}
 		}
 
 		.about-image-wrapper {
-			height: fit-content;
+			max-width: 330px;
 		}
 	}
 </style>

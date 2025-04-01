@@ -1,19 +1,35 @@
 <script>
 	import content from '$lib/content.json';
-	import Divider from '$lib/components/Divider.svelte';
+	import SectionTitle from '$lib/components/SectionTitle.svelte';
 	import { slide, fly } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	let desktopContent;
 	let activeIndex = null;
 
+	onMount(() => {
+		if (window.innerWidth >= 768) {
+			activeIndex = 0;
+		}
+	});
+
 	const setActive = (index) => {
-		activeIndex = activeIndex === index ? null : index;
+		if (window.innerWidth >= 768) {
+			activeIndex = index;
+		} else {
+			activeIndex = activeIndex === index ? null : index;
+		}
+	};
+
+	let sectionTitleProps = {
+		title: 'W ofercie',
+		color: 'var(--color-text)',
+		backgroundColor: 'var(--background-light-brown)'
 	};
 </script>
 
 <section id="offer" class="offer-section">
-	<h1 class="section-title text-monserrat">{content.offer.title}</h1>
-	<Divider />
+	<SectionTitle {sectionTitleProps} />
 	<article class="offer-container">
 		<ul class="offer-list">
 			{#each content.offer.items as item, index}
@@ -26,18 +42,21 @@
 					{#if activeIndex !== null && index === activeIndex}
 						<div class="offer-content mobile-content visible"
 								 in:slide={{ duration: 500 }} out:slide={{ duration: 300 }}>
-							<p class="text-monserrat">{item.description}</p>
+							<img class="offer-image" style="width: 100%;" src={item.description.src} alt={item.description.alt} />
 						</div>
 					{/if}
 				</li>
 			{/each}
 		</ul>
 		{#if activeIndex !== null}
-			<div bind:this={desktopContent} class="offer-content desktop-content"
-					 in:fly={{ duration: 700, x: 100 }}
-					 out:fly={{ duration: 700, x: 100 }}>
-				<p class="text-monserrat">{content.offer.items[activeIndex]?.description}</p>
-			</div>
+			{#key activeIndex}
+				<div bind:this={desktopContent} class="offer-content desktop-content"
+						 in:fly={{ duration: 700, x: 100 }}>
+					<!--					 out:fly={{ duration: 100, x: 100 }}>-->
+					<img class="offer-image" style="width: 100%;" src={content.offer.items[activeIndex]?.description.src}
+							 alt={content.offer.items[activeIndex]?.description.alt} />
+				</div>
+			{/key}
 		{/if}
 	</article>
 </section>
@@ -46,11 +65,14 @@
   @use '$lib/styles/_mixins' as *;
 
   .offer-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
+    background: var(--color-backgroundSecondary);
+
   }
 
   .offer-container {
@@ -58,7 +80,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    margin-top: 30px;
+    padding: 50px 20px 30px;
   }
 
   .offer-list {
@@ -76,48 +98,47 @@
   }
 
   .offer-list-item.active .offer-button {
-    border-radius: 10px 10px 0 0;
+    border-radius: 2px 2px 0 0;
   }
 
   .offer-button {
     width: 100%;
     padding: 10px;
-    background: var(--color-backgroundSecondary);
-    color: var(--color-textSecondary);
-    font-size: var(--font-size-base);
+    background: var(--background-light-brown);
+    color: var(--color-text);
+    font-size: var(--font-size-medium);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-    border-radius: 20px;
+    border-radius: 2px;
     text-align: center;
     transition: background 0.3s, border-radius 2s;
-		letter-spacing: 1px;
+    letter-spacing: 3px;
   }
 
-  .offer-button:hover, .offer-button:focus, .offer-list-item.active .offer-button {
-    border: none;
-  }
 
   .mobile-content {
     max-height: 0;
     overflow: hidden;
-    padding: 0 1rem;
-    background: var(--color-backgroundSecondary);
+    background: transparent;
     font-size: 1rem;
-    color: var(--color-textSecondary);
+    color: var(--color-text-white);
     text-align: left;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 2px 2px;
     transition: max-height 0.4s ease, padding 0.4s ease;
+
+    .offer-image {
+      border-radius: 0 0 2px 2px;
+    }
   }
 
   .mobile-content.visible {
     max-height: 500px;
-    padding: 1rem;
   }
 
   .offer-button.visible {
-    border-radius: 10px 10px 0 0;
+    border-radius: 2px 2px 0 0;
     transition: border-radius 0.1s;
   }
 
@@ -125,22 +146,46 @@
     display: none;
   }
 
+
   @include media(tablet) {
+    .offer-section {
+      padding: 80px 0 40px;
+
+    }
+
+    .offer-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      height: 100%;
+      background: var(--color-backgroundSecondary);
+      z-index: -1;
+    }
+
     .offer-container {
       flex-direction: row;
-      justify-content: flex-start;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 0;
+      height: 460px;
+      overflow: hidden;
     }
 
     .offer-list {
-      flex: 0 0 50%;
+      flex: 0 0 40%;
+      justify-content: center;
+      gap: 20px;
     }
 
     .offer-button {
-			letter-spacing: 6px;
-		}
+      font-size: var(--font-size-lg);
+      letter-spacing: 6px;
+    }
     .offer-button, .offer-button.visible, .offer-list-item, .offer-list-item.active .offer-button {
-      border-radius: 5px 20px 20px 5px;
+      border-radius: var(--border-radius-base);
     }
 
     .mobile-content, .mobile-content.visible {
@@ -148,18 +193,28 @@
     }
 
     .desktop-content {
-      display: block;
+      display: flex;
       width: 50%;
-      padding: 20px;
       background: var(--color-backgroundSecondary);
-      border-radius: 40px 4px 4px 40px;
       font-size: 1rem;
       color: var(--color-textSecondary);
       text-align: left;
+
+      .offer-image {
+        max-height: 460px;
+        width: 100%;
+        object-fit: contain;
+        margin: auto;
+        transition: transform 0.4s ease;
+      }
     }
 
-		.offer-button:hover {
-      background: var(--color-backgroundSecondaryHower);
-		}
+
+    .offer-image:hover {
+      transform: scale(1.3);
+    }
+    .offer-button:hover {
+      box-shadow: 0 0 20px var(--background-dark-brown);
+    }
   }
 </style>

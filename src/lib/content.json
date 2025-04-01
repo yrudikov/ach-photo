@@ -1,7 +1,7 @@
 {
 	"site": {
-		"title": "AR Consulting",
-		"description": "Twój niezawodny partner w świecie biznesu i konsultingu."
+		"title": "Anna Cheba Fotografia",
+		"description": "Zatrzymuję emocje i tworzę wyjątkowe wspomnienia dzięki magii fotografii."
 	},
 	"check": "is Life!",
 	"header": {
@@ -20,207 +20,199 @@
 		"heroImageDesktop": "/img/hero-img-desktop.webp",
 		"heroImageTablet": "/img/hero-img-tablet.webp",
 		"heroImageMobile": "/img/hero-img-mobile.webp",
-		"heroImageAlt": "Anna Cheba, Fotograf"
+		"heroImageAlt": "Anna Cheba z psem w zielonym plenerze – chwila bliskości i spokoju w otoczeniu natury\n"
 	},
 	"about": {
-		"title": "Artur, Mariusz Ryszka",
+		"title": "O mnie",
 		"aboutList": [
 			{
-				"content": "Manager zarządzający z doświadczeniem w obszarze IT, AI, Sprzedaży, Marketingu i Logistyki."
+				"content": "Nazywam się <b>Anna Cheba</b> i fotografia to moja największa pasja. \nJest to sposób na zatrzymanie ulotnych chwil i opowiadanie historii <b>obrazem</b>."
 			},
 			{
-				"content": "Co-founder i CEO software house “Email2TMS”, który stworzył pierwsze rozwiązanie AI do wprowadzania zleceń transportowych."
+				"content": "Od zawsze fascynowały mnie emocje ukryte w spojrzeniach, radość zamknięta w uśmiechach i magia momentów, które warto zachować na zawsze."
 			},
 			{
-				"content": "Odpowiadał za rozwój biznesu w firmach technologicznych, w tym dla największej europejskiej platformy logistycznej - transportu drogowego. "
+				"content": "Każda sesja to dla mnie coś więcej niż praca - to szansa na stworzenie niepowtarzalnych wspomnień."
 			},
 			{
-				"content": "Stworzył pionierski model dystrybucji dla innowacyjnego systemu analizy czasu pracy kierowcy w czasie rzeczywistym. "
-			},
-			{
-				"content": "Właściciel \"4.0 Consulting\" działającej od 14 lat na polskim rynku. Firmy zajmującej się doradztwem biznesowym, optymalizacją kosztów i tworzeniem profesjonalnych stron www."
-			},
-			{
-				"content": "Wprowadzał na rynek jedno z pierwszych rozwiązań gabinetowych obsługujących e-recepte i e-wizyte."
+				"content": "Do każdego zlecenia podchodzę z ogromnym zaangażowaniem i sercem, dbając o to, aby zdjęcia oddawały prawdziwe <b>emocje i piękno chwili.</b>"
 			}
 		],
 		"image": {
 			"src": "/img/about-img.webp",
-			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+			"alt": "Anna Cheba z psem podczas spaceru leśną drogą – pasja do fotografii i wyjątkowa więź z czworonogiem."
 		}
 	},
 	"offer": {
-		"title": "OFERUJEMY",
+		"title": "W ofercie",
 		"items": [
 			{
-				"title": "Consulting Biznesowy",
-				"description": "Pomagam firmom dostosować strategie biznesowe do dynamicznie zmieniającego się rynku, wspierając ich stabilny rozwój i budowanie przewagi konkurencyjnej. Moje indywidualne podejście pozwala usprawniać procesy, zwiększać efektywność operacyjną i lepiej wykorzystywać dostępne zasoby."
+				"title": "Sesje plenerowe psów",
+				"description": {
+					"src": "/img/offerImages/1-o-i.webp",
+					"alt": "Portret psa na świeżym powietrzu, sesja plenerowa"
+				}
 			},
 			{
-				"title": "Pricing & Volume",
-				"description": "Skuteczna polityka cenowa i zarządzanie wolumenem sprzedaży to kluczowe elementy rentowności. Optymalizuję strategie cenowe, aby firmy mogły maksymalizować zyski, utrzymać konkurencyjność i jednocześnie oferować realną wartość swoim klientom."
+				"title": "Sesje miotów",
+				"description": {
+					"src": "/img/offerImages/2-o-i.webp",
+					"alt": "Śpiący szczeniak na niebieskim tle — sesja miotu"
+				}
 			},
 			{
-				"title": "Skalowanie Sprzedaży",
-				"description": "Pomagam firmom skutecznie zwiększać sprzedaż, wdrażając dopasowane strategie i nowoczesne technologie. Prowadzę szkolenia dla zespołów sprzedażowych i marketingowych, pomagając im osiągać wyższą efektywność. Moje rozwiązania umożliwiają ekspansję na nowe rynki, wzrost przychodów i dynamiczny rozwój biznesu."
+				"title": "Sesje podczas wystaw",
+				"description": {
+					"src": "/img/offerImages/3-o-i.webp",
+					"alt": "Pies w pozycji wystawowej z odbiciem na podłodze"
+				}
 			},
 			{
-				"title": "Automatyzacja Procesów",
-				"description": "Automatyzacja to klucz do większej efektywności i oszczędności. Wdrażam inteligentne systemy, które usprawniają operacje biznesowe, eliminują błędy i pozwalają firmom skupić się na strategii, zamiast na powtarzalnych zadaniach."
+				"title": "Sesje plenerowe",
+				"description": {
+					"src": "/img/offerImages/4-o-i.webp",
+					"alt": "Kobieta na moście w miejskim plenerze"
+				}
 			},
 			{
-				"title": "Optymalizacja Kosztów",
-				"description": "Pomagam firmom identyfikować obszary nadmiernych wydatków oraz wdrażam strategie redukcji kosztów bez kompromisów w zakresie jakości. Moje podejście pozwala na efektywne zarządzanie zasobami i długoterminowe zwiększenie rentowności."
+				"title": "Sesje okolicznościowe",
+				"description": {
+					"src": "/img/offerImages/5-o-i.webp",
+					"alt": "Kobieta w ciąży w różowej sukni i wianku na tle natury"
+				}
 			},
 			{
-				"title": "Strony WWW",
-				"description": "Tworzymy nowoczesne, responsywne i funkcjonalne strony internetowe, które budują profesjonalny wizerunek firm i zwiększają ich skuteczność marketingową. Nasze projekty są optymalizowane pod SEO, a także w pełni dostosowane do potrzeb użytkowników. Oferujemy również gotowe rozwiązania, które pozwalają uruchomić profesjonalną stronę już w kilka dni."
+				"title": "Oferta ślubno-weselna",
+				"description": {
+					"src": "/img/offerImages/6-o-i.webp",
+					"alt": "Para młoda, pan młody całuje pannę młodą."
+				}
+			},
+			{
+				"title": "Sesje produktowe",
+				"description": {
+					"src": "/img/offerImages/7-o-i.webp",
+					"alt": "Modelka fitness z hantlą — sesja produktowa odzieży sportowej"
+				}
+			}
+		]
+	},
+	"offerCarousel": {
+		"title": "Oferta",
+		"content": [
+			{ "text": "" }
+		],
+		"images": [
+			{
+				"src": "/img/carousel/1-o-c.webp",
+				"alt": "Sesja plenerowa psów – pakiety MINI i MEDIUM od 400 zł"
+			},
+			{
+				"src": "/img/carousel/2-o-c.webp",
+				"alt": "Sesja miotu szczeniąt – pakiety MINI i MEDIUM od 500 zł"
+			},
+			{
+				"src": "/img/carousel/3-o-c.webp",
+				"alt": "Sesja fotograficzna podczas wystawy – pakiet 3 ujęć za 150 zł"
+			},
+			{
+				"src": "/img/carousel/4-o-c.webp",
+				"alt": "Sesja plenerowa portretowa – pakiety STANDARD i MAX od 400 zł"
+			},
+			{
+				"src": "/img/carousel/5-o-c.webp",
+				"alt": "Sesja okolicznościowa – pakiety STANDARD i MAX od 600 zł"
+			},
+			{
+				"src": "/img/carousel/6-o-c.webp",
+				"alt": "Sesja ślubno-weselna – pakiety od MINI do MAX PLUS od 1200 zł"
+			},
+			{
+				"src": "/img/carousel/7-o-c.webp",
+				"alt": "Sesja produktowa – od 500 zł, cena ustalana indywidualnie"
 			}
 		]
 	},
 	"portfolio": {
-		"title": "Profesjonalne strony WWW – Twoja wizytówka w sieci",
+		"title": "Portfolio",
 		"content": [
 			{
-				"text": "Tworzymy nowoczesne i funkcjonalne strony internetowe, które pomagają budować profesjonalny wizerunek i skutecznie docierać do klientów."
+				"title": "FOTOGRAFIA ZWIERZĄT",
+				"description": [
+					{ "text": "bo miłość zwierząt jest bezwarunkowa. Staram się uchwycić piękno, emocje zawarte w waszej więzi oraz uczucia, które Wam towarzyszą." }
+				]
 			},
 			{
-				"text": "Współpracujemy z zespołem doświadczonych developerów oraz software house Quicksort Sp. z o.o., aby zapewnić najwyższą jakość realizacji."
+				"title": "FOTOGRAFII BIZNESOWEJ",
+				"description": [
+					{ "text": "bo profesjonalny wizerunek to klucz do sukcesu, a ja pomagam Ci pokazać siebie w najlepszym świetle." }
+				]
 			},
-			{ "text": "Zaufaj specjalistom i wyróżnij się w sieci!" }
+			{
+				"title": "FOTOGRAFIA PRODUKTOWA",
+				"description": [
+					{ "text": "bo każdy produkt ma swoją historię. Tworzę zdjęcia, które podkreślają jego wyjątkowość i przyciągają uwagę klientów." }
+				]
+			},
+			{
+				"title": "FOTOGRAFIA PORTRETOWA",
+				"description": [
+					{ "text": "bo nie potrzebujesz powodu, aby uwiecznić swoje piękno." }
+				]
+			},
+			{
+				"title": "FOTOGRAFIA OKOLICZNOŚCIOWA",
+				"description": [
+					{ "text": "bo życie składa się z chwil, które warto zachować na zawsze. Tworzę kadry pełne emocji i autentyczności, byś mógł wracać do nich przez lata." }
+				]
+			},
+			{
+				"title": "FOTOGRAFIA ŚLUBNA",
+				"description": [
+					{ "text": "bo każdy ślub to wyjątkowa historia pełna miłości, wzruszeń i szczęścia." }
+				]
+			}
 		],
-		"images": [
-			{
-				"src": "/img/carousel/diet-a-1.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+ z hasłem 'Dieta dla każdego'. Zdrowe odżywianie bez tajemnic, regulacja masy ciała, koniec z niedoborami, poprawa zdrowia i zdrowa relacja z jedzeniem."
-			},
-			{
-				"src": "/img/carousel/diet-a-2.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+."
-			},
-			{
-				"src": "/img/carousel/diet-a-3.webp",
-				"alt": "Zrzut ekranu strony DietetykA A+."
-			},
-			{
-				"src": "/img/carousel/a-ch-1.webp",
-				"alt": "Zrzut ekranu strony Anny Cheby, specjalistki w dziedzinie fotografii kynologicznej, felinologicznej, biznesowej, portretowej, produktowej, okolicznościowej i ślubnej. Opis pasji do fotografii, uchwycenia emocji i zatrzymania ulotnych chwil w wyjątkowych kadrach."
-			},
-			{
-				"src": "/img/carousel/a-ch-2.webp",
-				"alt": "Zrzut ekranu strony Anny Cheby."
-			},
-			{
-				"src": "/img/carousel/e2t-1.webp",
-				"alt": "Zrzut ekranu strony Email2TMS – aplikacji wspierającej cyfryzację transportu. Interfejs użytkownika dostosowany do zarządzania transportem i usprawniania pracy spedytorów."
-			},
-			{
-				"src": "/img/carousel/e2t-2.webp",
-				"alt": "Zrzut ekranu strony Email2TMS."
-			},
-			{
-				"src": "/img/carousel/e2t-3.webp",
-				"alt": "Zrzut ekranu strony Email2TMS."
-			}
-		]
-	},
-	"experience": {
-		"title": "doświadczenie",
-		"content": [
-			{
-				"title": "Zarządzanie i rozwój biznesu",
-				"description": [
-					{ "text": "Ponad 10 lat doświadczenia w prowadzeniu i\nskalowaniu wyników firm" },
-					{ "text": "Tworzenie strategii rozwoju dla małych i średnich przedsiębiorstw" },
-					{ "text": "Budowanie struktur organizacyjnych i zespołów sprzedażowych" }
-				]
-			},
-			{
-				"title": " IT, AI i automatyzacja",
-				"description": [
-					{ "text": "Wdrażanie nowoczesnych rozwiązań AI i automatyzacji procesów" },
-					{ "text": "Rozwój oprogramowania dla branży logistycznej i biznesowej" },
-					{ "text": "Optymalizacja działań firm poprzez dobór odpowiednich narzędzi IT" }
-				]
-			},
-			{
-				"title": "Logistyka i transport",
-				"description": [
-					{ "text": "Doświadczenie w zarządzaniu procesami logistycznymi" },
-					{ "text": "Tworzenie innowacyjnych systemów do monitorowania i analizy transportu" },
-					{ "text": "Optymalizacja kosztów i procesów w branży TSL" }
-				]
-			},
-			{
-				"title": "Sprzedaż i strategia cenowa",
-				"description": [
-					{ "text": "Skalowanie działów sprzedaży i budowanie skutecznych strategii pricingowych" },
-					{ "text": "Wdrażanie systemów CRM i automatyzacji działań handlowych" },
-					{ "text": "Negocjacje B2B i optymalizacja konwersji w sprzedaży" }
-				]
-			},
-			{
-				"title": "Consulting i optymalizacja kosztów",
-				"description": [
-					{ "text": "Doradztwo dla firm w zakresie strategii wzrostu i efektywności operacyjnej" },
-					{ "text": "Redukcja kosztów poprzez nowoczesne modele zarządzania i analizy danych" },
-					{ "text": "Współpraca z firmami w celu zwiększenia rentowności i skalowalności" }
-				]
-			},
-			{
-				"title": "Tworzenie stron WWW i budowanie marki online",
-				"description": [
-					{ "text": "Prowadzenie zespołu developerów w realizacji profesjonalnych stron WWW" },
-					{ "text": "Tworzenie nowoczesnych i zoptymalizowanych pod SEO stron dla firm" },
-					{
-						"text": "Integracja systemów i narzędzi marketingowych dla skutecznej obecności online"
-					}
-				]
-			}
-		]
+		"portfolioCarousel": "Portfolio ACH Fotografia"
 	},
 	"citation": {
 		"img": {
-			"src": "/img/citation-image-blur.webp",
-			"alt": "Artur, Mariusz Ryszka – doświadczony manager w obszarze IT, AI, sprzedaży, marketingu i logistyki. Co-founder i CEO software house Email2TMS, twórca pierwszego rozwiązania AI do wprowadzania zleceń transportowych. Ekspert w rozwoju biznesu technologicznego oraz optymalizacji kosztów w firmach."
+			"src": "/img/citation-image.webp",
+			"alt": "Portret Anny Cheby, fotografki z pasją."
 		},
-		"content": "„Skuteczna optymalizacja to klucz do wzrostu. Pomogę Ci osiągnąć lepsze wyniki poprzez strategię, automatyzację i nowoczesne podejście do zarządzania.”"
-	},
-	"focus": {
-		"title": "focus",
-		"items": [
-			{ "name": "SZTUCZNA INTELIGENCJA", "src": "/img/f-s-1.svg" },
-			{ "name": "OPTYMALIZACJA", "src": "/img/f-s-2.svg" },
-			{ "name": "STRATEGIA ROZWOJU I WZROSTU", "src": "/img/f-s-3.svg" },
-			{ "name": "WSPÓŁPRACA", "src": "/img/f-s-4.svg" },
-			{ "name": "TECHNOLOGIA INFORMATYCZNA", "src": "/img/f-s-5.svg" },
-			{ "name": "TARGETOWANIE", "src": "/img/f-s-6.svg" }
-		],
-		"image": {
-			"src": "/img/f-s-7.svg",
-			"alt": "WIZJA I INNOWACJA"
-		}
+		"content": "“Każde zdjęcie  to chwila, która trwa wiecznie”"
 	},
 	"contact": {
-		"title": "Kontakt",
-		"logo": "/img/logo-consulting.png",
-		"background": "/img/contact-image.webp",
+		"title": "ACH FOTOGRAFIA",
+		"logo": "/img/logo-footer.webp",
+		"background": "/img/logo-footer.webp",
+		"subtitles": [
+			"Fotografia kynologiczna",
+			"Fotografia Felinologiczna",
+			"fotografia biznesowa",
+			"fotografia portretowa",
+			"fotografia produktowa",
+			"fotografia okolicznościowa",
+			"fotografia ślubna"
+		],
 		"content": [
-			{ "icon": "", "text": "Śląsk, Polska" },
-			{ "icon": "", "text": "+48 884 885 165" },
-			{ "icon": "", "text": "ryszka.artur.b2b@gmail.com" },
-			{ "icon": "", "text": "www.business-consulting.top" }
+			{ "icon": "ic:baseline-phone", "text": "+48 884 885 165", "url": "tel:+48884885165", "title": "Telefon - Anna Cheba"},
+			{ "icon": "material-symbols-light:arrow-selector-tool", "text": "www.ach-fotografia.com", "url": "https://ach-fotografia.com/", "title": "Strona - ACH Fotografia" },
+			{ "icon": "material-symbols-light:mail-sharp", "text": "annacheba.fotografia@gmail.com", "url": "mailto:annacheba.fotografia@gmail.com", "title": "Mail do ACH Fotografia"},
+			{ "icon": "bxs:map", "text": "Zabrze, Polska", "url": "https://maps.app.goo.gl/J1wZJZXvUHi6zo5o7", "title": "Adres ACH Fotografia"},
+			{ "icon": "basil:facebook-messenger-solid", "text": "achpetsphotography", "url": "https://www.facebook.com/achpetsphotography", "title": "Facebook - ACH Fotografia"},
+			{ "icon": "raphael:instagram", "text": "annacheba_fotografia", "url": "https://www.instagram.com/annacheba_fotografia", "title": "Instagram - ACH Fotografia"}
 		]
 	},
 	"footer": {
-		"copyright": "© 2024 AR Consulting. Wszelkie prawa zastrzeżone.",
+		"copyright": "© 2025 ACH Fotografia. Wszelkie prawa zastrzeżone.",
 		"socials": [
-			{ "name": "LinkedIn", "link": "https://linkedin.com/company/ar-consulting" },
-			{ "name": "Facebook", "link": "https://facebook.com/ar-consulting" },
-			{ "name": "Instagram", "link": "https://instagram.com/ar-consulting" }
+			{ "icon": "basil:facebook-messenger-solid", "text": "achpetsphotography", "url": "https://www.facebook.com/achpetsphotography", "title": "Facebook - ACH Fotografia"},
+			{ "icon": "raphael:instagram", "text": "annacheba_fotografia", "url": "https://www.instagram.com/annacheba_fotografia", "title": "Instagram - ACH Fotografia"},
+			{ "icon": "material-symbols-light:mail-sharp", "text": "annacheba.fotografia@gmail.com", "url": "mailto:annacheba.fotografia@gmail.com", "title": "Mail do ACH Fotografia"}
 		]
 	},
 	"offerInfo": {
-		"description": "Ta strona stanowi wizualizację \"wariantu 1\" do umowy o utworzenie strony www."
+		"description": "Strona Stworzona przez 4.0 Consulting - “Wariant 1” www.business-consulting.top"
 	}
 }
