@@ -1,0 +1,21 @@
+{
+	"name": "Anna Cheba Fotografia",
+	"short_name": "ACH Fotografia",
+	"description": "Zatrzymuję emocje i tworzę wyjątkowe wspomnienia dzięki magii fotografii.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#8a8077",
+	"theme_color": "#8a8077",
+	"icons": [
+		{
+			"src": "/img/logo-ach.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/img/logo-ach.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
