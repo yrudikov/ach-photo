@@ -11,6 +11,7 @@
 	import Contact from '$lib/components/Contact.svelte';
 	import OfferInfo from '$lib/components/OfferInfo.svelte';
 	import SEO from '$lib/components/SEO.svelte';
+	import Socials from '$lib/components/Socials.svelte';
 
 	onDestroy(() => {
 		screen.cleanup();
@@ -20,6 +21,7 @@
 <SEO />
 <Header />
 <main class="container">
+	<Socials/>
 	<Hero />
 	<About />
 	<Offer />

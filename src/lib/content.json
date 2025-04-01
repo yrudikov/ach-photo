@@ -205,8 +205,12 @@
 		]
 	},
 	"footer": {
-		"copyright": "© 2025 ACH Fotografia. Wszelkie prawa zastrzeżone."
-
+		"copyright": "© 2025 ACH Fotografia. Wszelkie prawa zastrzeżone.",
+		"socials": [
+			{ "icon": "basil:facebook-messenger-solid", "text": "achpetsphotography", "url": "https://www.facebook.com/achpetsphotography", "title": "Facebook - ACH Fotografia"},
+			{ "icon": "raphael:instagram", "text": "annacheba_fotografia", "url": "https://www.instagram.com/annacheba_fotografia", "title": "Instagram - ACH Fotografia"},
+			{ "icon": "material-symbols-light:mail-sharp", "text": "annacheba.fotografia@gmail.com", "url": "mailto:annacheba.fotografia@gmail.com", "title": "Mail do ACH Fotografia"}
+		]
 	},
 	"offerInfo": {
 		"description": "Strona Stworzona przez 4.0 Consulting - “Wariant 1” www.business-consulting.top"

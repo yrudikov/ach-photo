@@ -64,7 +64,7 @@
 	}
 </script>
 
-<div class="carousel-wrapper"
+<div id="portfolioCarousel" class="carousel-wrapper"
 		 on:pointerdown={handleInteraction}
 		 on:wheel={handleInteraction}
 		 on:touchstart={handleInteraction}>

@@ -2,7 +2,7 @@
 	import content from '$lib/content.json';
 </script>
 
-<section class="citation-section">
+<section id="citation" class="citation-section">
 	<article class="citation-article">
 		<div class="citation-image-wrapper">
 			<img src={content.citation.img.src} alt={content.citation.img.alt} class="citation-image" />

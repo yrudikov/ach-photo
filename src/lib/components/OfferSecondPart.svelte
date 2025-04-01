@@ -10,7 +10,7 @@
 	};
 </script>
 
-<section class="portfolio-section text-monserrat ">
+<section id="offer-second" class="portfolio-section text-monserrat ">
 	<SectionTitle {sectionTitleProps} />
 	<div class="portfolio-content-wrapper">
 		<OfferCarousel />
